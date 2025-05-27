@@ -27,7 +27,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
-            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            <a class="nav-link" href="home.html">Home</a>
             <a class="nav-link" href="stands-expositores.html">Stands y expositores</a>
             <a class="nav-link" href="sobre-feria.html">Sobre la feria</a>
             <a class="nav-link" href="itinerario.html">Itinerario</a>
@@ -35,8 +35,7 @@
             <a class="nav-link" href="accesibilidad.html">Accesibilidad</a>
             <a class="nav-link" href="galeria.html">Galería</a>
             <a class="nav-link" href="entradas-pagos.html">Entradas</a>
-            <a class="nav-link" href="contacto-soporte.html">Contacto</a>
-
+            <a class="nav-link active" aria-current="page" href="contacto-soporte.html">Contacto</a>
           </div>
         </div>
       </div>
@@ -46,7 +45,27 @@
   <main>
     <h2>CONTACTO</h2>
     <div class="contenedor">
-
+      <form class="form-soporte">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" class="form-control" placeholder="Motivo de tu consulta"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje aquí..."
+            required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
     </div>
   </main>
 

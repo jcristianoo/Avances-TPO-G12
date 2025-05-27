@@ -7,6 +7,7 @@
   <title>Feria Sustentable</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +28,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto">
-            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            <a class="nav-link" href="home.html">Home</a>
             <a class="nav-link" href="stands-expositores.html">Stands y expositores</a>
             <a class="nav-link" href="sobre-feria.html">Sobre la feria</a>
-            <a class="nav-link" href="itinerario.html">Itinerario</a>
+            <a class="nav-link active" aria-current="page" href="itinerario.html">Itinerario</a>
             <a class="nav-link" href="actividades.html">Actividades</a>
             <a class="nav-link" href="accesibilidad.html">Accesibilidad</a>
             <a class="nav-link" href="galeria.html">Galería</a>
@@ -45,37 +46,88 @@
   <main>
     <h2>ITINERARIO</h2>
     <div class="contenedor">
-      <table class="table table-striped-columns">
-        <thead>
-          <tr>
-            <th scope="col">CIUDAD</th>
-            <th scope="col">LOCACIÓN</th>
-            <th scope="col">DÍA</th>
-            <th scope="col">HORARIO</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">BUENOS AIRES</th>
-            <td>Parque Centenario</td>
-            <td>Jueves a Domingo</td>
-            <td>10:00 a 19:00</td>
-          </tr>
-          <tr>
-            <th scope="row">CÓRDOBA</th>
-            <td>Parque Sarmiento</td>
-            <td>Viernes a Domingo</td>
-            <td>11:00 a 20:00 </td>
-          </tr>
-          <tr>
-            <th scope="row">ROSARIO</th>
-            <td>Predio Ferial de la Ciudad</td>
-            <td>Sábado y Domingo</td>
-            <td>12:00 a 21:00 </td>
-          </tr>
-        </tbody>
-      </table>
-      <p>NOTA: nuevas ciudades y fechas se irán sumando a lo largo del año</p>
+      <div class="table-responsive">
+        <table class="table tabla-itinerario minimalista">
+          <thead>
+            <tr>
+              <th>CIUDAD</th>
+              <th>LOCACIÓN Y DÍAS</th>
+              <th>HORARIO</th>
+              <th>CAPACIDAD</th>
+              <th>ESTACIONAMIENTO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="ciudad-min">
+                <img src="../img/maps/map-bsas.png" alt="Buenos Aires" class="img-ciudad-min">
+                <span class="nombre-ciudad">Buenos Aires</span>
+              </td>
+              <td>
+                Parque Centenario<br>
+                <span class="dias">Jueves a Domingo</span>
+              </td>
+              <td>
+                10:00 a 19:00<br>
+                <span class="detalle">Últ. ingreso 18:30</span>
+              </td>
+              <td>
+                5.000 personas<br>
+                <span class="detalle">Capacidad máx.</span>
+              </td>
+              <td>
+                Disponible, gratuito
+              </td>
+            </tr>
+            <tr>
+              <td class="ciudad-min">
+                <img src="../img/maps/map-cordoba.png" alt="Córdoba" class="img-ciudad-min">
+                <span class="nombre-ciudad">Córdoba</span>
+              </td>
+              <td>
+                Parque Sarmiento<br>
+                <span class="dias">Viernes a Domingo</span>
+              </td>
+              <td>
+                11:00 a 20:00<br>
+                <span class="detalle">Últ. ingreso 19:30</span>
+              </td>
+              <td>
+                3.000 personas<br>
+                <span class="detalle">Capacidad máx.</span>
+              </td>
+              <td>
+                Disponible, gratuito
+              </td>
+            </tr>
+            <tr>
+              <td class="ciudad-min">
+                <img src="../img/maps/map-rosario.png" alt="Rosario" class="img-ciudad-min">
+                <span class="nombre-ciudad">Rosario</span>
+              </td>
+              <td>
+                Predio Ferial de la Ciudad<br>
+                <span class="dias">Sábado y Domingo</span>
+              </td>
+              <td>
+                12:00 a 21:00<br>
+                <span class="detalle">Últ. ingreso 20:30</span>
+              </td>
+              <td>
+                4.000 personas<br>
+                <span class="detalle">Capacidad máx.</span>
+              </td>
+              <td>
+                Disponible, gratuito
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alert alerta-itinerario mt-3" role="alert">
+        <i class="bi bi-info-circle"></i>
+        Nuevas ciudades y fechas se irán sumando a lo largo del año. ¡Mantente atento a nuestras redes sociales!
+      </div>
 
       <div class="caja-titulo">
         <h3>ACTIVIDADES PROGRAMADAS EN TODAS LAS CIUDADES</h3>
