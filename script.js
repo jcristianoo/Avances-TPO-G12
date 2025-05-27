@@ -1,5 +1,8 @@
 // Módulo para manejar la funcionalidad de mapas y modales
 const MapManager = {
+  // Almacenar las instancias de los modales
+  modalInstances: {},
+
   // Configuración de los mapas por ciudad
   mapConfig: {
     bsas: {
@@ -29,11 +32,78 @@ const MapManager = {
   init() {
     console.log('Inicializando MapManager...');
     try {
+      // Limpiar modales existentes antes de inicializar
+      this.cleanupModals();
       this.setupMaps();
       this.setupModals();
       console.log('MapManager inicializado correctamente');
     } catch (error) {
       console.error('Error al inicializar MapManager:', error);
+    }
+  },
+
+  // Limpia los modales existentes
+  cleanupModals() {
+    // Eliminar modales existentes del DOM
+    Object.values(this.mapConfig).forEach(config => {
+      const existingModal = document.getElementById(config.modalId);
+      if (existingModal) {
+        // Si existe una instancia de Bootstrap Modal, destruirla
+        if (this.modalInstances[config.modalId]) {
+          this.modalInstances[config.modalId].dispose();
+          delete this.modalInstances[config.modalId];
+        }
+        existingModal.remove();
+      }
+    });
+  },
+
+  // Crea un modal dinámicamente usando el template
+  createModal(config) {
+    try {
+      // Obtener el template
+      const template = document.getElementById('modalTemplate');
+      if (!template) {
+        throw new Error('No se encontró el template para los modales');
+      }
+
+      // Clonar el template
+      const modalElement = template.content.cloneNode(true).firstElementChild;
+
+      // Configurar el modal
+      modalElement.id = config.modalId;
+      modalElement.setAttribute('aria-labelledby', `${config.modalId}Label`);
+
+      // Configurar el título
+      const titleElement = modalElement.querySelector('.modal-title');
+      titleElement.id = `${config.modalId}Label`;
+      titleElement.textContent = config.title;
+
+      // Configurar el contenido
+      const contentElement = modalElement.querySelector('.modal-body');
+      contentElement.textContent = config.content;
+
+      // Agregar el modal al body del documento
+      document.body.appendChild(modalElement);
+
+      // Crear una nueva instancia de Bootstrap Modal
+      const modalInstance = new bootstrap.Modal(modalElement, {
+        backdrop: 'static', // Evita que el modal se cierre al hacer click fuera
+        keyboard: false // Evita que el modal se cierre con la tecla ESC
+      });
+
+      // Almacenar la instancia del modal
+      this.modalInstances[config.modalId] = modalInstance;
+
+      // Agregar event listener para limpiar cuando se cierre el modal
+      modalElement.addEventListener('hidden.bs.modal', () => {
+        console.log(`Modal ${config.modalId} cerrado`);
+      });
+
+      return modalInstance;
+    } catch (error) {
+      console.error(`Error al crear el modal ${config.modalId}:`, error);
+      throw error;
     }
   },
 
@@ -67,6 +137,15 @@ const MapManager = {
         area.setAttribute('data-bs-target', `#${config.modalId}`);
         area.style.cursor = 'pointer';
 
+        // Agregar event listener para el click en el área
+        area.addEventListener('click', (e) => {
+          e.preventDefault();
+          const modalInstance = this.modalInstances[config.modalId];
+          if (modalInstance) {
+            modalInstance.show();
+          }
+        });
+
         // Agregar event listener a la imagen para loguear coordenadas de click
         const img = mapElement.previousElementSibling;
         if (img && img.tagName === 'IMG') {
@@ -85,45 +164,13 @@ const MapManager = {
     });
   },
 
-  // Crea un modal dinámicamente usando el template
-  createModal(config) {
-    // Obtener el template
-    const template = document.getElementById('modalTemplate');
-    if (!template) {
-      throw new Error('No se encontró el template para los modales');
-    }
-
-    // Clonar el template
-    const modalElement = template.content.cloneNode(true).firstElementChild;
-
-    // Configurar el modal
-    modalElement.id = config.modalId;
-    modalElement.setAttribute('aria-labelledby', `${config.modalId}Label`);
-
-    // Configurar el título
-    const titleElement = modalElement.querySelector('.modal-title');
-    titleElement.id = `${config.modalId}Label`;
-    titleElement.textContent = config.title;
-
-    // Configurar el contenido
-    const contentElement = modalElement.querySelector('.modal-body');
-    contentElement.textContent = config.content;
-
-    // Agregar el modal al body del documento
-    document.body.appendChild(modalElement);
-
-    // Inicializar el modal de Bootstrap
-    return new bootstrap.Modal(modalElement);
-  },
-
   // Configura los modales
   setupModals() {
     console.log('Configurando modales...');
     Object.entries(this.mapConfig).forEach(([city, config]) => {
       console.log(`Configurando modal para ${city}...`);
       try {
-        // Crear el modal dinámicamente
-        const modal = this.createModal(config);
+        this.createModal(config);
         console.log(`Modal ${city} creado correctamente`);
       } catch (error) {
         console.error(`Error al crear el modal ${city}:`, error);
