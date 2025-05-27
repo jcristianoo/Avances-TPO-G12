@@ -7,24 +7,36 @@ const MapManager = {
   mapConfig: {
     bsas: {
       id: 'mapaBsAs',
-      modalId: 'modalBsAs',
-      coords: '143,181,43', // Coordenadas para el área clickeable de Buenos Aires
-      title: 'Ropa Ecológica - Buenos Aires',
-      content: 'Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables'
+      areas: [
+        {
+          id: 'modalBsAsRopa',
+          coords: '143,181,43',
+          title: 'Ropa Ecológica - Buenos Aires',
+          content: 'Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables'
+        },
+      ]
     },
     cordoba: {
       id: 'mapaCordoba',
-      modalId: 'modalCordoba',
-      coords: '777,335,45', // Coordenadas para el área clickeable de Córdoba
-      title: 'Tecnología Sustentable - Córdoba',
-      content: 'Paneles solares, cargadores solares, lámparas LED ecológicas y gadgets de bajo consumo'
+      areas: [
+        {
+          id: 'modalCordobaTecno',
+          coords: '777,335,45',
+          title: 'Tecnología Sustentable - Córdoba',
+          content: 'Paneles solares, cargadores solares, lámparas LED ecológicas y gadgets de bajo consumo'
+        },
+      ]
     },
     rosario: {
       id: 'mapaRosario',
-      modalId: 'modalRosario',
-      coords: '232,68,45', // Coordenadas para el área clickeable de Rosario
-      title: 'Huerta Urbana - Rosario',
-      content: 'Plantas nativas, composteras, macetas biodegradables y kits para armar huertas en casa'
+      areas: [
+        {
+          id: 'modalRosarioHuerta',
+          coords: '232,68,45',
+          title: 'Huerta Urbana - Rosario',
+          content: 'Plantas nativas, composteras, macetas biodegradables y kits para armar huertas en casa'
+        },
+      ]
     }
   },
 
@@ -46,15 +58,15 @@ const MapManager = {
   cleanupModals() {
     // Eliminar modales existentes del DOM
     Object.values(this.mapConfig).forEach(config => {
-      const existingModal = document.getElementById(config.modalId);
-      if (existingModal) {
+      const existingModals = document.querySelectorAll(`#${config.id} area`);
+      existingModals.forEach(area => {
         // Si existe una instancia de Bootstrap Modal, destruirla
-        if (this.modalInstances[config.modalId]) {
-          this.modalInstances[config.modalId].dispose();
-          delete this.modalInstances[config.modalId];
+        if (this.modalInstances[area.id]) {
+          this.modalInstances[area.id].dispose();
+          delete this.modalInstances[area.id];
         }
-        existingModal.remove();
-      }
+        area.remove();
+      });
     });
   },
 
@@ -71,12 +83,12 @@ const MapManager = {
       const modalElement = template.content.cloneNode(true).firstElementChild;
 
       // Configurar el modal
-      modalElement.id = config.modalId;
-      modalElement.setAttribute('aria-labelledby', `${config.modalId}Label`);
+      modalElement.id = config.id;
+      modalElement.setAttribute('aria-labelledby', `${config.id}Label`);
 
       // Configurar el título
       const titleElement = modalElement.querySelector('.modal-title');
-      titleElement.id = `${config.modalId}Label`;
+      titleElement.id = `${config.id}Label`;
       titleElement.textContent = config.title;
 
       // Configurar el contenido
@@ -93,16 +105,16 @@ const MapManager = {
       });
 
       // Almacenar la instancia del modal
-      this.modalInstances[config.modalId] = modalInstance;
+      this.modalInstances[config.id] = modalInstance;
 
       // Agregar event listener para limpiar cuando se cierre el modal
       modalElement.addEventListener('hidden.bs.modal', () => {
-        console.log(`Modal ${config.modalId} cerrado`);
+        console.log(`Modal ${config.id} cerrado`);
       });
 
       return modalInstance;
     } catch (error) {
-      console.error(`Error al crear el modal ${config.modalId}:`, error);
+      console.error(`Error al crear el modal ${config.id}:`, error);
       throw error;
     }
   },
@@ -118,63 +130,60 @@ const MapManager = {
         return;
       }
 
-      const area = mapElement.querySelector('area');
-      if (!area) {
-        console.warn(`No se encontró el área del mapa para ${city}`);
-        return;
-      }
+      // Limpiar áreas existentes
+      mapElement.innerHTML = '';
 
-      try {
-        // Asegurarse de que las coordenadas se establezcan correctamente
-        if (config.coords) {
-          area.setAttribute('coords', config.coords);
-          console.log(`Coordenadas establecidas para ${city}: ${config.coords}`);
-        } else {
-          console.warn(`No hay coordenadas definidas para ${city}`);
-        }
-
-        // Asegurarse de que el target del modal esté correctamente establecido
-        area.setAttribute('data-bs-target', `#${config.modalId}`);
+      // Crear áreas para cada punto clickeable
+      config.areas.forEach(areaConfig => {
+        const area = document.createElement('area');
+        area.shape = 'circle';
+        area.coords = areaConfig.coords;
+        area.alt = areaConfig.title;
+        area.title = areaConfig.title;
         area.style.cursor = 'pointer';
+        area.setAttribute('data-bs-target', `#${areaConfig.id}`);
 
         // Agregar event listener para el click en el área
         area.addEventListener('click', (e) => {
           e.preventDefault();
-          const modalInstance = this.modalInstances[config.modalId];
+          const modalInstance = this.modalInstances[areaConfig.id];
           if (modalInstance) {
             modalInstance.show();
           }
         });
 
-        // Agregar event listener a la imagen para loguear coordenadas de click
-        const img = mapElement.previousElementSibling;
-        if (img && img.tagName === 'IMG') {
-          img.addEventListener('click', function (e) {
-            const rect = img.getBoundingClientRect();
-            const x = Math.round(e.clientX - rect.left);
-            const y = Math.round(e.clientY - rect.top);
-            console.log(`Click en imagen de ${city}: x=${x}, y=${y}`);
-          });
-        }
+        mapElement.appendChild(area);
+        console.log(`Área ${areaConfig.id} configurada para ${city}`);
+      });
 
-        console.log(`Mapa ${city} configurado correctamente`);
-      } catch (error) {
-        console.error(`Error al configurar el mapa ${city}:`, error);
+      // Agregar event listener a la imagen para loguear coordenadas de click
+      const img = mapElement.previousElementSibling;
+      if (img && img.tagName === 'IMG') {
+        img.addEventListener('click', function (e) {
+          const rect = img.getBoundingClientRect();
+          const x = Math.round(e.clientX - rect.left);
+          const y = Math.round(e.clientY - rect.top);
+          console.log(`Click en imagen de ${city}: x=${x}, y=${y}`);
+        });
       }
+
+      console.log(`Mapa ${city} configurado correctamente`);
     });
   },
 
   // Configura los modales
   setupModals() {
     console.log('Configurando modales...');
-    Object.entries(this.mapConfig).forEach(([city, config]) => {
-      console.log(`Configurando modal para ${city}...`);
-      try {
-        this.createModal(config);
-        console.log(`Modal ${city} creado correctamente`);
-      } catch (error) {
-        console.error(`Error al crear el modal ${city}:`, error);
-      }
+    Object.values(this.mapConfig).forEach(config => {
+      config.areas.forEach(areaConfig => {
+        console.log(`Configurando modal para ${areaConfig.id}...`);
+        try {
+          this.createModal(areaConfig);
+          console.log(`Modal ${areaConfig.id} creado correctamente`);
+        } catch (error) {
+          console.error(`Error al crear el modal ${areaConfig.id}:`, error);
+        }
+      });
     });
   }
 };
