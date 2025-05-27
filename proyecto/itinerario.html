@@ -152,92 +152,51 @@
         <h3>MAPA INTERACTIVO DE STANDS</h3>
       </div>
 
-
-
       <div class="map">
-        <img src="../img/maps/map-bsas.png" alt="Mapa de Buenos Aires" usemap="#workmap">
-        <map name="workmap">
-          <area shape="circle" coords="143,181,43" type="button" class="btn" data-bs-toggle="modal"
-            data-bs-target="#exampleModal" alt="Mapa de BS AS" title="Mapa de BS AS" id="mapaArea">
+        <img src="../img/maps/map-bsas.png" alt="Mapa de Buenos Aires" usemap="#mapaBsAs">
+        <map name="mapaBsAs" id="mapaBsAs">
+          <area shape="circle" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalBsAs"
+            alt="Mapa de Buenos Aires" title="Mapa de Buenos Aires">
         </map>
       </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title fs-5" id="exampleModalLabel">ROPA ECOLÓGICA</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="map">
-        <img src="../img/maps/map-cordoba.png" alt="Mapa de Córdoba" usemap="#workmap">
-        <map name="workmap">
-          <area shape="circle" coords="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            alt="Mapa de Córdoba" title="Mapa de Córdoba" id="mapaArea">
+        <img src="../img/maps/map-cordoba.png" alt="Mapa de Córdoba" usemap="#mapaCordoba">
+        <map name="mapaCordoba" id="mapaCordoba">
+          <area shape="circle" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalCordoba"
+            alt="Mapa de Córdoba" title="Mapa de Córdoba">
         </map>
       </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title fs-5" id="exampleModalLabel">ROPA ECOLÓGICA</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aspernatur veniam porro natus,
-              maxime provident unde dolorum in quas accusamus esse cum necessitatibus architecto soluta corrupti animi
-              error molestiae beatae?
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="map">
-        <img src="../img/maps/map-rosario.png" alt="Mapa de Rosario" usemap="#workmap">
-        <map name="workmap">
-          <area shape="circle" coords="" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
-            alt="Mapa de Rosario" title="Mapa de Rosario" id="mapaArea">
+        <img src="../img/maps/map-rosario.png" alt="Mapa de Rosario" usemap="#mapaRosario">
+        <map name="mapaRosario" id="mapaRosario">
+          <area shape="circle" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalRosario"
+            alt="Mapa de Rosario" title="Mapa de Rosario">
         </map>
-      </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title fs-5" id="exampleModalLabel">ROPA ECOLÓGICA</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur aspernatur veniam porro natus,
-              maxime provident unde dolorum in quas accusamus esse cum necessitatibus architecto soluta corrupti animi
-              error molestiae beatae?
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
   </main>
+
+  <!-- Template para los modales -->
+  <template id="modalTemplate">
+    <div class="modal fade" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5"></h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
   <footer>
     <h5>Contacto</h5>
     <p>contacto@ecolife.com.ar</p>
