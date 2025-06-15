@@ -45,7 +45,7 @@
 
   <main>
     <h2>ITINERARIO</h2>
-    <div class="contenedor">
+    <div class="contenedor animada">
       <div class="table-responsive">
         <table class="table tabla-itinerario minimalista">
           <thead>
@@ -60,7 +60,7 @@
           <tbody>
             <tr>
               <td class="ciudad-min">
-                <img src="../img/maps/map-bsas.png" alt="Buenos Aires" class="img-ciudad-min">
+                <img src="../img/map-bsas.png" alt="Buenos Aires" class="img-ciudad-min">
                 <span class="nombre-ciudad">Buenos Aires</span>
               </td>
               <td>
@@ -81,7 +81,7 @@
             </tr>
             <tr>
               <td class="ciudad-min">
-                <img src="../img/maps/map-cordoba.png" alt="Córdoba" class="img-ciudad-min">
+                <img src="../img/map-bsas.png" alt="Córdoba" class="img-ciudad-min">
                 <span class="nombre-ciudad">Córdoba</span>
               </td>
               <td>
@@ -102,7 +102,7 @@
             </tr>
             <tr>
               <td class="ciudad-min">
-                <img src="../img/maps/map-rosario.png" alt="Rosario" class="img-ciudad-min">
+                <img src="../img/map-rosario.png" alt="Rosario" class="img-ciudad-min">
                 <span class="nombre-ciudad">Rosario</span>
               </td>
               <td>
@@ -124,104 +124,73 @@
           </tbody>
         </table>
       </div>
-      <div class="alert alerta-itinerario mt-3" role="alert">
+      <div class="alert alerta-itinerario mt-3 animada" role="alert">
         <i class="bi bi-info-circle"></i>
         Nuevas ciudades y fechas se irán sumando a lo largo del año. ¡Mantente atento a nuestras redes sociales!
       </div>
 
-      <div class="caja-titulo">
-        <h3>ACTIVIDADES PROGRAMADAS EN TODAS LAS CIUDADES</h3>
-      </div>
-      <div class="caja-contenido">
-        <ul class="itinerario">
-          <li>Productos orgánicos y naturales</li>
-          <p>Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene
-            ecológica.</li>
-          </p>
-          <li>Ropa ecológica y moda sustentable</li>
-          <p>Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables</p>
-          <li>Artesanías sustentables</li>
-          <p>Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal
-          </p>
-          <li>Huerta urbana y jardinería ecológica</li>
-          <p>Plantas nativas, composteras, macetas biodegradables, kits para armar huertas en casa</p>
-          <li>Tecnología sustentable</li>
-          <p>Paneles solares, cargadores solares, lámparas LED ecológicas, gadgets de bajo consumo</p>
-          <li>Movilidad sostenible</li>
-          <p>Bicicletas recicladas, monopatines eléctricos, stands de educación vial ecológica</p>
-          <li>Educación ambiental</li>
-          <p>Material educativo, libros sobre ecología, juegos didácticos para niños y talleres informativos</p>
-          <li>Stand de reciclaje</li>
-          <p>Punto verde para separación de residuos, muestras de productos hechos con material reciclado, consejos para
-            el hogar</p>
-        </ul>
-      </div>
-
       </ul>
-      <div class="caja-titulo">
+      
+      <div class="caja-titulo animada">
         <h3>EVENTOS ESPECIALES EXCLUSIVOS POR CIUDAD</h3>
       </div>
-      <div class="caja-contenido">
-        <h4>BUENOS AIRES</h4>
-        <ul class="itinerario">
-          <li>Taller de reciclaje creativo</li>
-          <p>Viernes a las 15:00 hs. Una actividad práctica para aprender a reutilizar materiales de forma creativa</p>
-          <li>Charla sobre energías verdes</li>
-          <p>Sábado a las 17:00 hs. Expertos explican cómo funcionan y se implementan las energías limpias</p>
-          <li>Show musical sustentable</li>
-          <p> Domingo a las 18:30 hs. Música en vivo con instrumentos reciclados y mensaje ambiental</p>
-
-        </ul>
-      </div>
-      <div class="caja-contenido">
-        <h4>CÓRDOBA</h4>
-        <ul class="itinerario">
-          <li>Caminata ecológica guiada</li>
-          <p>Sábado a las 10:30 hs. Un recorrido por la feria y sus alrededores con guía especializada en biodiversidad
-            urbana.</p>
-          <li>Cocina saludable en vivo</li>
-          <p>Sábado a las 16:00 hs. Una demostración culinaria de recetas sostenibles y nutritivas.</>
-            <li>Muestra de eco-emprendedores</li>
-          <p> Domingo a las 17:30 hs. Emprendedores presentan sus productos y servicios amigables con el ambiente</p>
-        </ul>
-      </div>
-      <div class="caja-contenido">
-
-        <h4>ROSARIO</h4>
-        <ul class="itinerario">
-          <li>Taller de huerta urbana</li>
-          <p>Sábado a las 14:00 hs. Se enseña a crear una huerta en espacios reducidos.
-          <p>
-            <li>Cine ambiental al aire libre</li>
-          <p>Sábado a las 20:00 hs. Proyección de cortos y documentales sobre temáticas ecológicas</p>
-          <li class="lista-eventos">Concurso de arte reciclado</li>
-          <p> Domingo a las 16:00 hs. Participantes exponen obras hechas con materiales reciclados
-          <p>
-        </ul>
+      <ul class="nav nav-tabs justify-content-center mb-3 animada" id="eventosTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab-bsas" data-bs-toggle="tab" data-bs-target="#contenido-bsas" type="button" role="tab" aria-controls="contenido-bsas" aria-selected="true">Buenos Aires</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-cordoba" data-bs-toggle="tab" data-bs-target="#contenido-cordoba" type="button" role="tab" aria-controls="contenido-cordoba" aria-selected="false">Córdoba</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-rosario" data-bs-toggle="tab" data-bs-target="#contenido-rosario" type="button" role="tab" aria-controls="contenido-rosario" aria-selected="false">Rosario</button>
+        </li>
+      </ul>
+      <div class="tab-content caja-contenido animada">
+        <div class="tab-pane fade show active" id="contenido-bsas" role="tabpanel" aria-labelledby="tab-bsas">
+          <ul class="itinerario">
+            <li><strong>♻️ Taller de reciclaje creativo</strong> <br><span class="detalle">🗓 Viernes a las 15:00 hs</span> – Actividad práctica para reutilizar materiales creativamente.</li>
+            <li><strong>🔋 Charla sobre energías verdes</strong> <br><span class="detalle">🗓 Sábado a las 17:00 hs</span> – Funcionamiento e implementación de energías limpias.</li>
+            <li><strong>🎶 Show musical sustentable</strong> <br><span class="detalle">🗓 Domingo a las 18:30 hs</span> – Con instrumentos reciclados y mensaje ambiental.</li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="contenido-cordoba" role="tabpanel" aria-labelledby="tab-cordoba">
+          <ul class="itinerario">
+            <li><strong>🌿 Caminata ecológica guiada</strong> <br><span class="detalle">🗓 Sábado a las 10:30 hs</span> – Recorrido con guía especializada en biodiversidad urbana.</li>
+            <li><strong>🥕 Cocina saludable en vivo</strong> <br><span class="detalle">🗓 Sábado a las 16:00 hs</span> – Recetas sostenibles y nutritivas en acción.</li>
+            <li><strong>🛍️ Muestra de eco-emprendedores</strong> <br><span class="detalle">🗓 Domingo a las 17:30 hs</span> – Productos y servicios de emprendedores verdes.</li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="contenido-rosario" role="tabpanel" aria-labelledby="tab-rosario">
+          <ul class="itinerario">
+            <li><strong>🌱 Taller de huerta urbana</strong> <br><span class="detalle">🗓 Sábado a las 14:00 hs</span> – Crear huertas en espacios reducidos.</li>
+            <li><strong>🎥 Cine ambiental al aire libre</strong> <br><span class="detalle">🗓 Sábado a las 20:00 hs</span> – Cortos y documentales ecológicos.</li>
+            <li><strong>🎨 Concurso de arte reciclado</strong> <br><span class="detalle">🗓 Domingo a las 16:00 hs</span> – Obras creadas con materiales reciclados.</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="caja-titulo">
+      <div class="caja-titulo animada">
         <h3>MAPA INTERACTIVO DE STANDS</h3>
       </div>
 
-      <div class="map">
-        <img src="../img/maps/map-bsas.png" alt="Mapa de Buenos Aires" usemap="#mapaBsAs">
+      <div class="map animada">
+        <img src="../img/map-bsas.png" alt="Mapa de Buenos Aires" usemap="#mapaBsAs">
         <map name="mapaBsAs" id="mapaBsAs">
           <area shape="circle" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalBsAs"
             alt="Mapa de Buenos Aires" title="Mapa de Buenos Aires">
         </map>
       </div>
 
-      <div class="map">
-        <img src="../img/maps/map-cordoba.png" alt="Mapa de Córdoba" usemap="#mapaCordoba">
+      <div class="map animada">
+        <img src="../img/map-cordoba.png" alt="Mapa de Córdoba" usemap="#mapaCordoba">
         <map name="mapaCordoba" id="mapaCordoba">
           <area shape="circle" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalCordoba"
             alt="Mapa de Córdoba" title="Mapa de Córdoba">
         </map>
       </div>
 
-      <div class="map">
-        <img src="../img/maps/map-rosario.png" alt="Mapa de Rosario" usemap="#mapaRosario">
+      <div class="map animada">
+        <img src="../img/map-rosario.png" alt="Mapa de Rosario" usemap="#mapaRosario">
         <map name="mapaRosario" id="mapaRosario">
           <area shape="circle" type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalRosario"
             alt="Mapa de Rosario" title="Mapa de Rosario">
