@@ -369,3 +369,25 @@ document.getElementById('btnCancelarDivision').addEventListener('click', functio
   document.getElementById('montoSegundoMedio').value = '';
   document.getElementById('camposTarjeta2').style.display = 'none';
 });
+
+// Validación del formulario de contacto
+document.getElementById("form-contacto").addEventListener("submit", function(event) {
+  event.preventDefault(); // Previene envío real
+
+  const nombre = this.nombre.value.trim();
+  const email = this.email.value.trim();
+  const mensaje = this.mensaje.value.trim();
+  const mensajeDiv = document.getElementById("form-mensaje");
+
+  if (!nombre || !email || !mensaje) {
+    mensajeDiv.textContent = "Por favor, completá todos los campos.";
+    mensajeDiv.style.color = "red";
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    mensajeDiv.textContent = "Ingresá un correo válido.";
+    mensajeDiv.style.color = "red";
+  } else {
+    mensajeDiv.textContent = "Mensaje enviado correctamente ✔";
+    mensajeDiv.style.color = "green";
+    this.reset();
+  }
+});
