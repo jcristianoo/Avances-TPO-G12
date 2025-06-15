@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -36,7 +38,6 @@
             <a class="nav-link" href="galeria.html">Galería</a>
             <a class="nav-link" href="entradas-pagos.html">Entradas</a>
             <a class="nav-link" href="contacto-soporte.html">Contacto</a>
-
           </div>
         </div>
       </div>
@@ -45,7 +46,7 @@
 
   <main>
     <h2>HOME</h2>
-    <div class="contenedor">
+    <div class="contenedor animada">
       <div class="caja-home">
         <h3>¿Qué es EcoLife?</h3>
         <p>EcoLife es una feria sustentable itinerante que recorre distintas ciudades del país con el objetivo de
@@ -54,6 +55,130 @@
           stands de emprendimientos verdes.</p>
       </div>
     </div>
+    <section class="novedades-bg mt-4">
+      <h3 class="text-center animada">Novedades</h3>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col animada">
+            <div class="card h-100">
+              <img src="../img/novedades-1.jpg" class="card-img-top" alt="Nueva charla sobre reciclaje">
+              <div class="card-body">
+                <h5 class="card-title">Nueva charla sobre reciclaje urbano</h5>
+                <p class="card-text"><small class="text-muted">01 de junio de 2025</small></p>
+                <p class="card-text">Incorporamos una nueva charla interactiva sobre reciclaje doméstico en la sede de Rosario.</p>
+                <a href="#" class="btn btn-success btn-sm">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col animada">
+            <div class="card h-100">
+              <img src="../img/novedades-2.jpg" class="card-img-top" alt="Nuevo expositor">
+              <div class="card-body">
+                <h5 class="card-title">Nuevo expositor de energía solar</h5>
+                <p class="card-text"><small class="text-muted">22 de mayo de 2025</small></p>
+                <p class="card-text">La empresa EcoSun se suma con un stand interactivo de energías renovables.</p>
+                <a href="#" class="btn btn-success btn-sm">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col animada">
+            <div class="card h-100">
+              <img src="../img/novedades-3.jpg" class="card-img-top" alt="Nueva sede">
+              <div class="card-body">
+                <h5 class="card-title">¡EcoLife llega a Mendoza!</h5>
+                <p class="card-text"><small class="text-muted">15 de mayo de 2025</small></p>
+                <p class="card-text">Confirmamos una nueva edición en Mendoza para el mes de agosto. ¡Seguimos creciendo!</p>
+                <a href="#" class="btn btn-success btn-sm">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col animada">
+            <div class="card h-100">
+              <img src="../img/novedades-4.jpg" class="card-img-top" alt="Concurso de ecodiseño">
+              <div class="card-body">
+                <h5 class="card-title">¡Lanzamos el Concurso de EcoDiseño!</h5>
+                <p class="card-text"><small class="text-muted">18 de mayo de 2025</small></p>
+                <p class="card-text">Participá con tu propuesta de mobiliario o producto sustentable y exponé en la próxima feria.</p>
+                <a href="#" class="btn btn-success btn-sm">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col animada">
+            <div class="card h-100">
+              <img src="../img/novedades-5.jpg" class="card-img-top" alt="Energía solar">
+              <div class="card-body">
+                <h5 class="card-title">Sede alimentada 100% con energía solar</h5>
+                <p class="card-text"><small class="text-muted">10 de mayo de 2025</small></p>
+                <p class="card-text">La edición de EcoLife en Córdoba será la primera alimentada íntegramente con paneles solares.</p>
+                <a href="#" class="btn btn-success btn-sm">Leer más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col animada">
+            <div class="card h-100">
+              <img src="../img/novedades-6.jpg" class="card-img-top" alt="Aplicación EcoLife">
+              <div class="card-body">
+                <h5 class="card-title">¡Descargá la app oficial de EcoLife!</h5>
+                <p class="card-text"><small class="text-muted">05 de mayo de 2025</small></p>
+                <p class="card-text">Ahora podés consultar el itinerario, guardar tus actividades favoritas y recibir alertas en tiempo real desde tu celular.</p>
+                <a href="#" class="btn btn-success btn-sm">Leer más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="caja-contenido text-center animada" id="contador-section" >
+      <h3>Impacto de tu visita 🌿</h3>
+      <p id="contador-visitas">Visitas al sitio: cargando...</p>
+      <p id="co2-ahorrado">CO₂ estimado ahorrado: cargando...</p>
+    </div>
+    <section class="reseñas animada">
+      <h3 class="text-center">Lo que dicen nuestros visitantes</h3>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card reseña">
+              <div class="card-body">
+                <p class="reseña-text">"Una experiencia increíble. Aprendí mucho sobre compostaje y consumo responsable."</p>
+                <h6 class="reseña-autor">— Carla, 32 años · Rosario</h6>
+                <div class="reseña-estrellas">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card reseña">
+              <div class="card-body">
+                <p class="reseña-text">"Me encantaron los stands de emprendimientos verdes. ¡Volvería sin dudas!"</p>
+                <h6 class="reseña-autor">— Marcos, 28 años · Córdoba</h6>
+                <div class="reseña-estrellas">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card reseña">
+              <div class="card-body">
+                <p class="reseña-text">"Llevé a mis hijos y se divirtieron un montón en los talleres para niños. Muy educativo."</p>
+                <h6 class="reseña-autor">— Natalia, 40 años · Buenos Aires</h6>
+                <div class="reseña-estrellas">★★★★☆</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="redes-sociales mt-5 animada">
+      <div class="contenedor text-center">
+        <h3>Seguinos en redes 🌿</h3>
+        <p>Sumate a nuestra comunidad para conocer novedades, talleres en vivo y más contenido sustentable.</p>
+        <div class="iconos-redes">
+          <a href="https://www.instagram.com" target="_blank" class="icono-rs instagram" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.facebook.com" target="_blank" class="icono-rs facebook" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.youtube.com" target="_blank" class="icono-rs youtube" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+          <a href="https://www.tiktok.com" target="_blank" class="icono-rs tiktok" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <h5>Contacto</h5>
@@ -72,5 +197,4 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="../script.js"> </script>
 </body>
-
 </html>
