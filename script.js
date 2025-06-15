@@ -203,3 +203,169 @@ if (document.readyState === 'loading') {
   console.log('DOM ya cargado, inicializando MapManager inmediatamente...');
   MapManager.init();
 }
+
+//Contador de visitas y Co2
+ document.addEventListener("DOMContentLoaded", function () {
+    const key = 'contadorVisitasEcoLife';
+    let visitas = localStorage.getItem(key);
+
+    if (!visitas) {
+      visitas = 1;
+    } else {
+      visitas = parseInt(visitas) + 1;
+    }
+
+    localStorage.setItem(key, visitas);
+
+    const co2PorVisita = 0.05; // kg de CO2 ficticio ahorrado
+    const co2Total = (visitas * co2PorVisita).toFixed(2);
+
+    document.getElementById("contador-visitas").innerText = `Visitas al sitio: ${visitas}`;
+    document.getElementById("co2-ahorrado").innerText = `CO₂ estimado ahorrado: ${co2Total} kg`;
+  });
+
+  // Animación de secciones al hacer scroll
+  document.addEventListener("DOMContentLoaded", function () {
+  const elementosAnimables = document.querySelectorAll(".animada");
+
+  const observer = new IntersectionObserver((entradas) => {
+    entradas.forEach((entrada) => {
+      if (entrada.isIntersecting) {
+        entrada.target.classList.add("visible");
+      } else {
+        entrada.target.classList.remove("visible");
+      }
+    });
+  }, {
+    threshold: 0.3,
+  });
+
+  elementosAnimables.forEach((el) => {
+    el.classList.add("oculta");
+    observer.observe(el);
+  });
+});
+
+
+//Deslizar suavemente a secciones al hacer click (scroll suave)
+document.querySelectorAll('a[href^="#"]').forEach(ancla => {
+  ancla.addEventListener('click', function (e) {
+    e.preventDefault();
+    const destino = document.querySelector(this.getAttribute('href'));
+    if (destino) {
+      destino.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
+
+//Resumen de Compra
+document.addEventListener("DOMContentLoaded", function () {
+      const tipoEntrada = document.getElementById("tipoEntrada");
+      const actividades = document.querySelectorAll("#formCompra input[type=checkbox]");
+      const resumenEntrada = document.getElementById("resumenEntrada");
+      const resumenActividades = document.getElementById("resumenActividades");
+      const resumenTotal = document.getElementById("resumenTotal");
+      const nombre = document.getElementById("nombre");
+      const email = document.getElementById("email");
+
+      const precios = {
+        entradas: {
+          general: 2000,
+          pase: 5000,
+          familiar: 6000,
+          preferencial: 0
+        },
+        actividades: {
+          tallerHuerta: 1000,
+          cocinaViva: 1500,
+          arteReciclado: 500
+        }
+      };
+
+      function actualizarResumen() {
+        let total = 0;
+        const tipo = tipoEntrada.value;
+        const precioEntrada = precios.entradas[tipo] || 0;
+        resumenEntrada.textContent = tipo ? `$${precioEntrada}` : '–';
+        total += precioEntrada;
+
+        let actividadesSeleccionadas = [];
+        actividades.forEach((act) => {
+          if (act.checked) {
+            const nombre = act.value;
+            const precioAct = precios.actividades[nombre] || 0;
+            actividadesSeleccionadas.push(`$${precioAct}`);
+            total += precioAct;
+          }
+        });
+
+        resumenActividades.textContent = actividadesSeleccionadas.length
+          ? actividadesSeleccionadas.join(' + ')
+          : '–';
+        resumenTotal.textContent = `$${total}`;
+      }
+
+      tipoEntrada.addEventListener("change", actualizarResumen);
+      actividades.forEach(act => act.addEventListener("change", actualizarResumen));
+
+      document.getElementById("formCompra").addEventListener("submit", function (e) {
+        e.preventDefault();
+        const tipo = tipoEntrada.value;
+        const nombreValor = nombre.value.trim();
+        const emailValor = email.value.trim();
+
+        if (!tipo) {
+          alert("⚠️ Debés seleccionar un tipo de entrada.");
+          tipoEntrada.focus();
+          return;
+        }
+
+        if (!nombreValor) {
+          alert("⚠️ Ingresá tu nombre y apellido.");
+          nombre.focus();
+          return;
+        }
+
+        if (!emailValor || !emailValor.includes("@") || !emailValor.includes(".")) {
+          alert("⚠️ Ingresá un correo electrónico válido.");
+          email.focus();
+          return;
+        }
+
+        alert(`🎉 ¡Gracias por tu compra, ${nombreValor}!\n\nTe enviaremos un correo a ${emailValor} con los detalles de tu entrada y actividades.`);
+      });
+    });
+
+// Mostrar campos de tarjeta según selección
+document.querySelectorAll('input[name="metodoPago"]').forEach(radio => {
+  radio.addEventListener('change', function() {
+    document.getElementById('camposTarjeta').style.display = this.value === 'tarjeta' ? 'block' : 'none';
+  });
+});
+
+// División de medios de pago
+document.getElementById('btnDividirPago').addEventListener('click', function () {
+  document.getElementById('dividirPagoSection').style.display = 'block';
+  this.style.display = 'none';
+  document.getElementById('btnCancelarDivision').classList.remove('d-none');
+});
+
+
+// Mostrar campos de tarjeta para segundo medio de pago
+document.getElementById('segundoMedioPago').addEventListener('change', function() {
+  document.getElementById('camposTarjeta2').style.display = this.value === 'tarjeta' ? 'block' : 'none';
+});
+
+// Botón para cancelar la división de medios de pago
+document.getElementById('btnCancelarDivision').addEventListener('click', function () {
+
+  document.getElementById('dividirPagoSection').style.display = 'none';
+
+  document.getElementById('btnDividirPago').style.display = 'inline-block';
+
+  this.classList.add('d-none');
+
+  document.getElementById('segundoMedioPago').value = '';
+  document.getElementById('montoSegundoMedio').value = '';
+  document.getElementById('camposTarjeta2').style.display = 'none';
+});
