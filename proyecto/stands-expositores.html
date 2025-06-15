@@ -45,12 +45,126 @@
 
   <main>
     <h2>STANDS Y EXPOSITORES</h2>
+    <p class="text-center mb-4 animada">
+      Descubrí las iniciativas más innovadoras de desarrollo sostenible en cada ciudad participante.
+    </p>
+    <div class="caja-titulo mt-5 animada">
+      <h2><span>🌿</span> Nuestros Expositores</h2>
+    </div>
     <div class="contenedor">
-
+      <section class="card animada">
+        <h3>🌆 Buenos Aires – Ropa Ecológica</h3>
+        <ul class="itinerario">
+          <li><strong>Ropa Ecológica</strong>
+            <p>Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="card animada">
+        <h3>🔋 Córdoba – Tecnología Sustentable</h3>
+        <ul class="itinerario">
+          <li><strong>Tecnología Sustentable</strong>
+            <p>Paneles solares, cargadores solares, lámparas LED ecológicas y gadgets de bajo consumo.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="card animada">
+        <h3>🌱 Rosario – Huerta Urbana</h3>
+        <ul class="itinerario">
+          <li><strong>Huerta Urbana</strong>
+            <p>Plantas nativas, composteras, macetas biodegradables y kits para armar huertas en casa.</p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <div class="caja-titulo mt-5 animada">
+      <h3><span>🛍️</span> Categorías Sustentables</h3>
+    </div>
+    <div class="text-center mb-3 animada">
+      <p>Explorá las principales propuestas sustentables presentes en los stands de EcoLife.</p>
+    </div>
+    <div class="accordion animada" id="categoriasStands">
+      <div class="card mb-3 shadow">
+        <div class="card-header p-0">
+          <button class="btn w-100 text-start categoria-btn" type="button" data-bs-toggle="collapse" data-bs-target="#organicos" aria-expanded="false" aria-controls="organicos">
+            <span>🥬 Productos orgánicos y naturales</span>
+            <span class="categoria-info">+ Saber más</span>
+          </button>
+        </div>
+        <div id="organicos" class="collapse" data-bs-parent="#categoriasStands">
+          <div class="card-body">
+            Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene ecológica.
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 shadow">
+        <div class="card-header p-0">
+          <button class="btn w-100 text-start categoria-btn" type="button" data-bs-toggle="collapse" data-bs-target="#tecnologia" aria-expanded="false" aria-controls="tecnologia">
+            <span>⚡ Tecnología sustentable</span>
+            <span class="categoria-info">+ Saber más</span>
+          </button>
+        </div>
+        <div id="tecnologia" class="collapse" data-bs-parent="#categoriasStands">
+          <div class="card-body">
+            Paneles solares, cargadores solares, lámparas LED ecológicas y gadgets de bajo consumo.
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 shadow">
+        <div class="card-header p-0">
+          <button class="btn w-100 text-start categoria-btn" type="button" data-bs-toggle="collapse" data-bs-target="#ropa" aria-expanded="false" aria-controls="ropa">
+            <span>🧵 Ropa ecológica y moda sustentable</span>
+            <span class="categoria-info">+ Saber más</span>
+          </button>
+        </div>
+        <div id="ropa" class="collapse" data-bs-parent="#categoriasStands">
+          <div class="card-body">
+            Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables.
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 shadow">
+        <div class="card-header p-0">
+          <button class="btn w-100 text-start categoria-btn" type="button" data-bs-toggle="collapse" data-bs-target="#artesanias" aria-expanded="false" aria-controls="artesanias">
+            <span>🎨 Artesanías sustentables</span>
+            <span class="categoria-info">+ Saber más</span> 
+          </button>
+        </div>
+        <div id="artesanias" class="collapse" data-bs-parent="#categoriasStands">
+          <div class="card-body">
+            Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="caja-titulo mt-5 animada">
+      <h3><span>👤</span> Nuestros Expositores</h3>
+    </div>
+    <div class="expositores-scroll animada">
+      <div class="card-integrante">
+        <img src="../img/ecoModa-logo.png" alt="EcoModa" class="img-fluid" style="max-height: 80px;">
+        <span class="nombre">EcoModa</span>
+        <p>Moda sostenible hecha con textiles reciclados y tintes naturales.</p>
+        <a href="#" target="_blank">Ver más</a>
+      </div>
+      <div class="col">
+        <div class="card-integrante">
+          <img src="../img/bioHuerta.png" alt="BioHuerta" class="img-fluid" style="max-height: 80px;">
+          <span class="nombre">BioHuerta</span>
+          <p>Kits para huertas urbanas, compost y macetas biodegradables.</p>
+          <a href="#" target="_blank">Instagram</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card-integrante">
+          <img src="../img/soltech.png" alt="SolTech" class="img-fluid" style="max-height: 80px;">
+          <span class="nombre">SolTech</span>
+          <p>Soluciones solares para hogares y pequeños emprendimientos.</p>
+          <a href="#" target="_blank">Sitio web</a>
+        </div>
+      </div>
     </div>
   </main>
-
-
   <footer>
     <h5>Contacto</h5>
     <p>contacto@ecolife.com.ar</p>
