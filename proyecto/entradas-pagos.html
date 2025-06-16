@@ -2,28 +2,31 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Feria Sustentable</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="../styles/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </head>
 
 <body>
-
   <header>
-    <!--NAVBAR DE BOOTSTRAP-->
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-sitio">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="../img/ecoLife LOGO.png" alt="Logo de EcoLife"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"><img src="../img/ecoLife LOGO.png" alt="Logo de EcoLife" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -37,7 +40,6 @@
             <a class="nav-link" href="galeria.html">Galería</a>
             <a class="nav-link active" aria-current="page" href="entradas-pagos.html">Entradas</a>
             <a class="nav-link" href="contacto-soporte.html">Contacto</a>
-
           </div>
         </div>
       </div>
@@ -48,184 +50,248 @@
     <h2>ENTRADAS</h2>
     <p class="text-center mb-4 animada">
       Adquirí tu entrada para la feria y sumate a la transformación hacia un futuro más sostenible.
-      <form id="formCompra">
+    </p>
 
-        <section class="card actividad-card animada" style="background-color: var(--gris-suave);">
-          <div class="row">
-            <div class="col-md-8">
-              <h4><i class="bi bi-ticket-perforated me-2"></i> Tipo de Entrada</h4>
-              <div class="form-group mb-4">
-                <label for="tipoEntrada">Seleccioná tu entrada</label>
-                <select class="form-control" id="tipoEntrada" required>
-                  <option value="">-- Elegí una opción --</option>
-                  <option value="general">Entrada general (por día) – $2.000</option>
-                  <option value="pase">Pase completo (3 días) – $5.000</option>
-                  <option value="familiar">Pack familiar (4 personas) – $6.000</option>
-                  <option value="preferencial">Acceso preferencial – Gratis</option>
-                </select>
-              </div>
-              <h4><i class="bi bi-calendar-check-fill me-2"></i> Actividades con reserva anticipada</h4>
-              <div class="form-group">
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" value="tallerHuerta" id="tallerHuerta">
-                  <label class="form-check-label" for="tallerHuerta">🪴 Taller de Huerta Urbana – $1.000</label>
-                </div>
-                <br>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" value="cocinaViva" id="cocinaViva">
-                  <label class="form-check-label" for="cocinaViva">🍲 Cocina Viva – $1.500</label>
-                </div>
-                <br>
-                <div class="form-check mb-2">
-                  <input class="form-check-input" type="checkbox" value="arteReciclado" id="arteReciclado">
-                  <label class="form-check-label" for="arteReciclado">🎨 Arte Reciclado – $500</label>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="bg-light rounded p-3 h-100 shadow-sm">
-                <h4><i class="bi bi-people-fill me-2"></i> Promociones</h4>
-                <ul class="list-unstyled">
-                  <li>👨‍👩‍👧 Pack familiar: 4 entradas al precio de 3</li><br>
-                  <li>👥 Grupos escolares: 50% con inscripción</li><br>
-                  <li>🎁 Sorteos en redes: seguinos para ganar entradas</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-       <section class="card actividad-card animada" style="background-color: var(--verde-claro);">
-        <h4><i class="bi bi-person-circle me-2"></i> Tus datos</h4>
-        <div class="container-fluid px-0">
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="nombre">Nombre y Apellido</label>
-              <input type="text" id="nombre" class="form-control" placeholder="Ej: Juan Pérez" required>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="email">Correo electrónico</label>
-              <input type="email" id="email" class="form-control" placeholder="Ej: juan@email.com" required>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="telefono">Teléfono</label>
-              <input type="tel" id="telefono" class="form-control" placeholder="Ej: 11-1234-5678" required>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="direccion">Dirección</label>
-              <input type="text" id="direccion" class="form-control" placeholder="Ej: Av. Siempre Viva 1234" required>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="piso-depto">Piso y/o Departamento</label>
-              <input type="text" id="piso-depto" class="form-control" placeholder="Ej: 5° A">
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="codigo-postal">Código Postal</label>
-              <input type="text" id="codigo-postal" class="form-control" placeholder="Ej: 5678" required>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="ciudad">Ciudad</label>
-              <input type="text" id="ciudad" class="form-control" placeholder="Ej: Buenos Aires" required>
-            </div>
-          </div>
-        </div>
-      </section>
-
-       <section class="card actividad-card animada" style="background-color: var(--verde-claro);">
-        <h4><i class="bi bi-credit-card-2-front-fill me-2"></i> Métodos de pago</h4>
-        <div class="form-group mb-3" id="metodosPagoGrupo">
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="metodoPago" id="pagoTarjeta" value="tarjeta" required>
-            <label class="form-check-label" for="pagoTarjeta">Tarjeta</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="metodoPago" id="pagoTransferencia" value="transferencia">
-            <label class="form-check-label" for="pagoTransferencia">Transferencia</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="metodoPago" id="pagoEfectivo" value="efectivo">
-            <label class="form-check-label" for="pagoEfectivo">Efectivo (en sede)</label>
-          </div>
-        </div>
-
-         <div id="camposTarjeta" style="display:none;">
-          <div class="form-group mb-2">
-            <label for="numeroTarjeta">Número de tarjeta</label>
-            <input type="text" id="numeroTarjeta" class="form-control" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" required>
-          </div>
-          <div class="form-group mb-2">
-            <label for="nombreTarjeta">Nombre en la tarjeta</label>
-            <input type="text" id="nombreTarjeta" class="form-control" placeholder="Como figura en la tarjeta" required>
-          </div>
-          <div class="form-row mb-2">
-            <div class="col">
-              <label for="vencimientoTarjeta">Vencimiento</label>
-              <input type="text" id="vencimientoTarjeta" class="form-control" maxlength="5" placeholder="MM/AA" required>
-            </div>
-            <div class="col">
-              <label for="cvvTarjeta">CVV</label>
-              <input type="text" id="cvvTarjeta" class="form-control" maxlength="4" placeholder="XXX" required>
-            </div>
-          </div>
-        </div>
-        
-         <div class="form-group mt-3">
-          <button type="button" class="btn btn-outline-success btn-sm" id="btnDividirPago">Dividir medios de pago</button>
-          <button type="button" class="btn btn-outline-danger btn-sm d-none" id="btnCancelarDivision">
-            Cancelar división
-          </button>
-        </div>
-        <div id="dividirPagoSection" style="display:none;">
-          <hr>
-          <label>Segundo medio de pago:</label>
-          <select id="segundoMedioPago" class="form-control mb-2" required>
-            <option value="">Seleccionar</option>
-            <option value="tarjeta">Tarjeta</option>
-            <option value="transferencia">Transferencia</option>
-            <option value="efectivo">Efectivo</option>
-          </select>
-
-           <div id="camposTarjeta2" style="display:none;">
-            <div class="form-group mb-2">
-              <label for="numeroTarjeta2">Número de tarjeta</label>
-              <input type="text" id="numeroTarjeta2" class="form-control" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" required>
-            </div>
-            <div class="form-group mb-2">
-              <label for="nombreTarjeta2">Nombre en la tarjeta</label>
-              <input type="text" id="nombreTarjeta2" class="form-control" placeholder="Como figura en la tarjeta" required>
-            </div>
-            <div class="form-row mb-2">
-              <div class="col">
-                <label for="vencimientoTarjeta2">Vencimiento</label>
-                <input type="text" id="vencimientoTarjeta2" class="form-control" maxlength="5" placeholder="MM/AA" required>
-              </div>
-              <div class="col">
-                <label for="cvvTarjeta2">CVV</label>
-                <input type="text" id="cvvTarjeta2" class="form-control" maxlength="4" placeholder="XXX" required>
-              </div>
-            </div>
-          </div>
-          <div class="form-group mb-2">
-            <label for="montoSegundoMedio">Monto a pagar con este medio</label>
-            <input type="number" id="montoSegundoMedio" class="form-control" min="1" placeholder="$0" required>
-          </div>
-        </div>
-        <p class="text-muted mt-3">* Plataforma segura EcoPay</p>
-      </section>
-
+    <form id="formCompra">
+      <!-- BLOQUE 1: ENTRADAS + ACTIVIDADES -->
       <section class="card actividad-card animada" style="background-color: var(--gris-suave);">
+        <div class="row">
+          <div class="col-md-8">
+            <h4><i class="bi bi-ticket-perforated me-2"></i> Tipo de Entrada</h4>
+            <div class="form-group mb-4">
+              <label for="tipoEntrada">Seleccioná tu entrada</label>
+              <select class="form-control" id="tipoEntrada"  >
+                <option value="">-- Elegí una opción --</option>
+                <option value="general">Entrada general (por día) – $2.000</option>
+                <option value="pase">Pase completo (3 días) – $5.000</option>
+                <option value="familiarDia">Pack familiar por día – $6.000</option>
+                <option value="familiarFull">Pack familiar completo – $15.000</option>
+                <option value="preferencial">Acceso preferencial – Gratis</option>
+              </select>
+            </div>
+
+            <h4><i class="bi bi-geo-alt-fill me-2"></i> Ciudad donde asistís</h4>
+            <div class="form-group mb-4">
+              <label for="ciudad">Seleccioná una ciudad</label>
+              <select class="form-control" id="ciudad" onchange="mostrarTalleres()" >
+                <option value="">-- Elegí una ciudad --</option>
+                <option value="bsas">Buenos Aires</option>
+                <option value="cordoba">Córdoba</option>
+                <option value="rosario">Rosario</option>
+              </select>
+            </div>
+
+            <h4><i class="bi bi-calendar-check-fill me-2"></i> Actividades con reserva anticipada</h4>
+            <div class="form-group" id="contenedorTalleres">
+              <!-- Talleres se insertan desde el JS -->
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="bg-light rounded p-3 h-100 shadow-sm">
+              <h4><i class="bi bi-people-fill me-2"></i> Promociones</h4>
+              <ul class="list-unstyled">
+                <li>👨‍👩‍👧 Pack familiar por día: 4 entradas por $6.000</li><br />
+                <li>👨‍👩‍👧 Pack familiar full: 4 personas los 3 días por $15.000</li><br />
+                <li>👥 Grupos escolares: 50% con inscripción</li><br />
+                <li>🎁 Sorteos en redes: seguinos para ganar entradas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOQUE 2: DATOS PERSONALES + MÉTODOS DE PAGO -->
+      <section
+        id="bloqueDatosPago"
+        class="card actividad-card animada mt-4"
+        style="background-color: var(--verde-claro); display: none"
+      >
+        <div class="row">
+          <!-- DATOS PERSONALES -->
+          <div class="col-md-6">
+            <h4><i class="bi bi-person-circle me-2"></i> Tus datos</h4>
+            <div class="container-fluid px-0">
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <label for="nombre">Nombre y Apellido</label>
+                  <input type="text" id="nombre" class="form-control" placeholder="Ej: Juan Pérez"  />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label for="email">Correo electrónico</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Ej: juan@email.com"
+                    
+                  />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label for="telefono">Teléfono</label>
+                  <input type="tel" id="telefono" class="form-control" placeholder="Ej: 11-1234-5678"  />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label for="direccion">Dirección</label>
+                  <input
+                    type="text"
+                    id="direccion"
+                    class="form-control"
+                    placeholder="Ej: Av. Siempre Viva 1234"
+                    
+                  />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label for="piso-depto">Piso y/o Departamento</label>
+                  <input type="text" id="piso-depto" class="form-control" placeholder="Ej: 5° A" />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label for="codigo-postal">Código Postal</label>
+                  <input type="text" id="codigo-postal" class="form-control" placeholder="Ej: 5678"  />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <label for="ciudadDomicilio">Ciudad</label>
+                  <input type="text" id="ciudadDomicilio" class="form-control" placeholder="Ej: Buenos Aires"  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MÉTODOS DE PAGO -->
+          <div class="col-md-6">
+            <h4><i class="bi bi-credit-card-2-front-fill me-2"></i> Métodos de pago</h4>
+            <div class="form-group mb-3" id="metodosPagoGrupo">
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="metodoPago"
+                  id="pagoTarjeta"
+                  value="tarjeta"
+                  
+                />
+                <label class="form-check-label" for="pagoTarjeta">Tarjeta</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="metodoPago" id="pagoTransferencia" value="transferencia" />
+                <label class="form-check-label" for="pagoTransferencia">Transferencia</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="metodoPago" id="pagoEfectivo" value="efectivo" />
+                <label class="form-check-label" for="pagoEfectivo">Efectivo (en sede)</label>
+              </div>
+            </div>
+
+            <div id="camposTarjeta" style="display: none;">
+              <div class="form-group mb-2">
+                <label for="numeroTarjeta">Número de tarjeta</label>
+                <input
+                  type="text"
+                  id="numeroTarjeta"
+                  class="form-control"
+                  maxlength="19"
+                  placeholder="XXXX XXXX XXXX XXXX"
+                  
+                />
+              </div>
+              <div class="form-group mb-2">
+                <label for="nombreTarjeta">Nombre en la tarjeta</label>
+                <input type="text" id="nombreTarjeta" class="form-control" placeholder="Como figura en la tarjeta"  />
+              </div>
+              <div class="form-row mb-2">
+                <div class="col">
+                  <label for="vencimientoTarjeta">Vencimiento</label>
+                  <input type="text" id="vencimientoTarjeta" class="form-control" maxlength="5" placeholder="MM/AA"  />
+                </div>
+                <div class="col">
+                  <label for="cvvTarjeta">CVV</label>
+                  <input type="text" id="cvvTarjeta" class="form-control" maxlength="4" placeholder="XXX"  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mt-3">
+              <button type="button" class="btn btn-outline-success btn-sm" id="btnDividirPago">Dividir medios de pago</button>
+              <button type="button" class="btn btn-outline-danger btn-sm d-none" id="btnCancelarDivision">Cancelar división</button>
+            </div>
+
+            <div id="dividirPagoSection" style="display: none;">
+              <hr />
+              <label>Segundo medio de pago:</label>
+              <select id="segundoMedioPago" class="form-control mb-2" >
+                <option value="">Seleccionar</option>
+                <option value="tarjeta">Tarjeta</option>
+                <option value="transferencia">Transferencia</option>
+                <option value="efectivo">Efectivo</option>
+              </select>
+
+              <div id="camposTarjeta2" style="display: none;">
+                <div class="form-group mb-2">
+                  <label for="numeroTarjeta2">Número de tarjeta</label>
+                  <input
+                    type="text"
+                    id="numeroTarjeta2"
+                    class="form-control"
+                    maxlength="19"
+                    placeholder="XXXX XXXX XXXX XXXX"
+                    
+                  />
+                </div>
+                <div class="form-group mb-2">
+                  <label for="nombreTarjeta2">Nombre en la tarjeta</label>
+                  <input type="text" id="nombreTarjeta2" class="form-control" placeholder="Como figura en la tarjeta"  />
+                </div>
+                <div class="form-row mb-2">
+                  <div class="col">
+                    <label for="vencimientoTarjeta2">Vencimiento</label>
+                    <input type="text" id="vencimientoTarjeta2" class="form-control" maxlength="5" placeholder="MM/AA"  />
+                  </div>
+                  <div class="col">
+                    <label for="cvvTarjeta2">CVV</label>
+                    <input type="text" id="cvvTarjeta2" class="form-control" maxlength="4" placeholder="XXX"  />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group mb-2">
+                <label for="montoSegundoMedio">Monto a pagar con este medio</label>
+                <input type="number" id="montoSegundoMedio" class="form-control" min="1" placeholder="$0"  />
+              </div>
+            </div>
+
+            <p class="text-muted mt-3">* Plataforma segura EcoPay</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOQUE 3: RESUMEN Y CONFIRMACIÓN -->
+      <section
+        id="bloqueResumen"
+        class="card actividad-card animada mt-4"
+        style="background-color: var(--gris-suave); display: none"
+      >
         <h4><i class="bi bi-clipboard-check me-2"></i> Resumen de compra</h4>
         <ul class="list-unstyled">
-          <li>Entrada: <span id="resumenEntrada">–</span></li><br>
-          <li>Actividades: <span id="resumenActividades">–</span></li><br>
+          <li>Entrada: <span id="resumenEntrada">–</span></li><br />
+          <li>Actividades: <span id="resumenActividades">–</span></li><br />
           <li><strong>Total a Pagar: <span id="resumenTotal">$0</span></strong></li>
         </ul>
       </section>
 
-      <div class="text-center my-4">
+      <div id="bloqueBotonConfirmar" class="text-center my-4" style="display: none">
         <button type="submit" class="btn btn-lg btn-success" id="btnConfirmarCompra">Confirmar compra</button>
       </div>
+      <div id="alertaCustom" style="display:none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #550000; color: white; padding: 20px 30px; border-radius: 8px; z-index: 9999; box-shadow: 0 0 10px rgba(0,0,0,0.6); font-family: sans-serif;">
+        <strong>Atención:</strong> <span id="mensajeAlerta">Por favor completá todos los campos</span>
+        <button onclick="cerrarAlerta()" style="margin-left: 20px; background: #880000; color: white; border: none; padding: 8px 12px; border-radius: 4px; cursor: pointer;">Aceptar</button>
+      </div>
     </form>
+
+<div id="mensajeFinal" style="display: none; padding: 20px; background-color: #e9ffe9; border: 1px solid #28a745; border-radius: 6px;">
+  <h3 id="tituloFinal"></h3>
+  <p id="detalleFinal"></p>
+</div>
+
   </main>
   
   <!-- Chat Flotante -->
@@ -284,10 +350,7 @@
     <p class="derechos">© 2025 Ecolife – Todos los derechos reservados. Proyecto académico sin fines comerciales.</p>
   </footer>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="../js/script.js"></script>
   <script src="../js/chat.js"></script>

@@ -14,17 +14,139 @@ const MapManager = {
           title: 'Ropa Ecológica - Buenos Aires',
           content: 'Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables'
         },
+        {
+          id: 'modalBsAsArtesanías',
+          coords: '250,171,43',
+          title: 'Artesanías sustentables - Buenos Aires',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalBsAsHuerta',
+          coords: '353,158,42',
+          title: 'Huerta urbana y jardinería ecológica - Buenos Aires',
+          content: 'Plantas nativas, composteras, macetas biodegradables, kits para armar huertas en casa'
+        },
+        {
+          id: 'modalBsAsEducacion',
+          coords: '463,135,43',
+          title: 'Educación ambiental - Buenos Aires',
+          content: 'Material educativo, libros sobre ecología, juegos didácticos para niños y talleres informativos'
+        },
+        {
+          id: 'modalBsAsReciclaje',
+          coords: '740,358,40',
+          title: 'Stand de reciclaje - Buenos Aires',
+          content: 'Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene ecológica.'
+        },
+        {
+          id: 'modalBsAsOrganicos',
+          coords: '648,464,40',
+          title: 'Productos orgánicos y naturales - Buenos Aires',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalBsTecnologia',
+          coords: '543,515,42',
+          title: 'Tecnología sustentable - Buenos Aires',
+          content: 'Paneles solares, cargadores solares, lámparas LED ecológicas, gadgets de bajo consumo'
+        },
+        {
+          id: 'modalBsAsMovilidad',
+          coords: '416,561,42',
+          title: 'Movilidad sostenible - Buenos Aires',
+          content: 'Bicicletas recicladas, monopatines eléctricos, stands de educación vial ecológica'
+        },
+        {
+          id: 'modalBsAsTaller',
+          coords: '592,72,36',
+          title: 'Taller de reciclaje creativo - Evento exclusivo de Buenos Aires',
+          content: 'Todos los días a las 15:00hs. Una actividad práctica donde vas a poder aprender a transformar residuos en objetos útiles o decorativos. Ideal para todas las edades. Se utilizan materiales reciclados y herramientas seguras'
+        },
+        {
+          id: 'modalBsAsShow',
+          coords: '654,171,38',
+          title: 'Show musical sustentable - Evento exclusivo de Buenos Aires',
+          content: 'Todos los días a las 18:30hs. Un espectáculo al aire libre con bandas que promueven mensajes ecológicos. El sonido se alimenta con energía renovable. Se recomienda traer tu propio vaso o botella reutilizable'
+        },
+        {
+          id: 'modalBsAsYoga',
+          coords: '716,253,37',
+          title: 'Clase de yoga ecológica - Evento exclusivo de Buenos Aires',
+          content: 'Todos los días a las 17:00hs. Una sesión de yoga para reconectar con el cuerpo y la naturaleza, en un entorno verde, guiada por profesionales. Se utilizan elementos reciclables y biodegradables'
+        },
       ]
     },
     cordoba: {
       id: 'mapaCordoba',
       areas: [
         {
-          id: 'modalCordobaTecno',
-          coords: '777,335,45',
-          title: 'Tecnología Sustentable - Córdoba',
-          content: 'Paneles solares, cargadores solares, lámparas LED ecológicas y gadgets de bajo consumo'
+          id: 'modalCordobaRopa',
+          coords: '609,535,41',
+          title: 'Ropa Ecológica - Cordoba',
+          content: 'Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables'
         },
+        {
+          id: 'modalCordobaArtesanías',
+          coords: '152,365,41',
+          title: 'Artesanías sustentables - Cordoba',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalCordobaHuerta',
+          coords: '186,252,41',
+          title: 'Huerta urbana y jardinería ecológica - Cordoba',
+          content: 'Plantas nativas, composteras, macetas biodegradables, kits para armar huertas en casa'
+        },
+        {
+          id: 'modalCordobaEducacion',
+          coords: '224,142,41',
+          title: 'Educación ambiental - Cordoba',
+          content: 'Material educativo, libros sobre ecología, juegos didácticos para niños y talleres informativos'
+        },
+        {
+          id: 'modalCordobaReciclaje',
+          coords: '640,156,41',
+          title: 'Stand de reciclaje - Cordoba',
+          content: 'Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene ecológica.'
+        },
+        {
+          id: 'modalCordobaOrganicos',
+          coords: '737,216,41',
+          title: 'Productos orgánicos y naturales - Cordoba',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalCordobaTecnologia',
+          coords: '777,334,41',
+          title: 'Tecnología sustentable - Cordoba',
+          content: 'Paneles solares, cargadores solares, lámparas LED ecológicas, gadgets de bajo consumo'
+        },
+        {
+          id: 'modalCordobaMovilidad',
+          coords: '753,483,41',
+          title: 'Movilidad sostenible - Cordoba',
+          content: 'Bicicletas recicladas, monopatines eléctricos, stands de educación vial ecológica'
+        },
+        {
+          id: 'modalCordobaGym',
+          coords: '321,74,41',
+          title: 'Eco-gym al aire libre - Evento exclusivo de Cordoba',
+          content: 'Todos los días a las 15:00hs.Clase abierta de ejercicios funcionales y estiramiento guiado por instructores, utilizando elementos reciclados como pesas y colchonetas ecológica'
+        },
+        {
+          id: 'modalCordobaCocina',
+          coords: '438,88,41',
+          title: 'Cocina saludable en vivo - Evento exclusivo de Cordoba',
+          content: 'Todos los días a las 17:00hs. Demostración de recetas con productos orgánicos y de estación. Tips para una alimentación consciente y sin desperdicio. Degustación al final de la actividad'
+        },
+        {
+          id: 'modalCordobaTrivia',
+          coords: '535,122,41',
+          title: 'Trivia sustentable con premios ecológicos - Evento exclusivo de Cordoba',
+          content: 'Todos los días a las 18:30 hs. Una competencia en equipo donde los visitantes responden preguntas sobre medio ambiente, reciclaje y sustentabilidad. Los ganadores se llevan productos ecológicos como bolsas reutilizables, botellas de acero y cuadernos reciclados. Ideal para aprender jugando'
+        },
+        
+        
       ]
     },
     rosario: {
@@ -35,6 +157,72 @@ const MapManager = {
           coords: '232,68,45',
           title: 'Huerta Urbana - Rosario',
           content: 'Plantas nativas, composteras, macetas biodegradables y kits para armar huertas en casa'
+        },
+        {
+          id: 'modalRosarioRopa',
+          coords: '167,475,43',
+          title: 'Ropa Ecológica - Rosario',
+          content: 'Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables'
+        },
+        {
+          id: 'modalRosarioArtesanías',
+          coords: '67,366,43',
+          title: 'Artesanías sustentables - Rosario',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalRosarioHuerta',
+          coords: '67,244,43',
+          title: 'Huerta urbana y jardinería ecológica - Rosario',
+          content: 'Plantas nativas, composteras, macetas biodegradables, kits para armar huertas en casa'
+        },
+        {
+          id: 'modalRosarioEducacion',
+          coords: '96,105,43',
+          title: 'Educación ambiental - Rosario',
+          content: 'Material educativo, libros sobre ecología, juegos didácticos para niños y talleres informativos'
+        },
+        {
+          id: 'modalRosarioReciclaje',
+          coords: '590,72,43',
+          title: 'Stand de reciclaje - Rosario',
+          content: 'Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene ecológica.'
+        },
+        {
+          id: 'modalRosarioOrganicos',
+          coords: '720,111,43',
+          title: 'Productos orgánicos y naturales - Rosario',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalRosarioTecnologia',
+          coords: '742,237,43',
+          title: 'Tecnología sustentable - Rosario',
+          content: 'Paneles solares, cargadores solares, lámparas LED ecológicas, gadgets de bajo consumo'
+        },
+        {
+          id: 'modalRosarioMovilidad',
+          coords: '688,390,43',
+          title: 'Movilidad sostenible - Rosario',
+          content: 'Bicicletas recicladas, monopatines eléctricos, stands de educación vial ecológica'
+        },
+        {
+          id: 'modalRosarioTaller',
+          coords: '321,74,41',
+          title: 'Taller de huerta urbana - Evento exclusivo de Rosario',
+          content: 'Todos los días a las 15:00hs. Espacio interactivo para aprender a armar una huerta casera, incluso en espacios reducidos. Incluye semillas agroecológicas y materiales reutilizables.'
+        },
+        {
+          id: 'modalRosarioCocina',
+          coords: '438,88,41',
+          title: 'Cine ambiental al aire libre - Evento exclusivo de Rosario',
+          content: 'Todos los días a las 20:00hs. Proyección de cortos y documentales sobre problemáticas ambientales. Se realiza al aire libre con mantas y luces solares. Traé tu vianda o bebida reutilizable'
+        },
+        {
+          id: 'modalRosarioArte',
+          coords: '535,122,41',
+          title: 'Concurso de arte reciclado - Evento exclusivo de Rosario',
+          content: 'Todos los días a las 16:00hs. Actividad abierta donde se exhiben obras hechas con materiales reciclados. Espacio creativo para chicos y grandes. Premios sustentables para las mejores propuestas'
         },
       ]
     }
@@ -225,7 +413,7 @@ if (document.readyState === 'loading') {
   });
 
   // Animación de secciones al hacer scroll
-  document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
   const elementosAnimables = document.querySelectorAll(".animada");
 
   const observer = new IntersectionObserver((entradas) => {
@@ -258,136 +446,238 @@ document.querySelectorAll('a[href^="#"]').forEach(ancla => {
   });
 });
 
-//Resumen de Compra
-document.addEventListener("DOMContentLoaded", function () {
-      const tipoEntrada = document.getElementById("tipoEntrada");
-      const actividades = document.querySelectorAll("#formCompra input[type=checkbox]");
-      const resumenEntrada = document.getElementById("resumenEntrada");
-      const resumenActividades = document.getElementById("resumenActividades");
-      const resumenTotal = document.getElementById("resumenTotal");
-      const nombre = document.getElementById("nombre");
-      const email = document.getElementById("email");
 
-      const precios = {
-        entradas: {
-          general: 2000,
-          pase: 5000,
-          familiar: 6000,
-          preferencial: 0
-        },
-        actividades: {
-          tallerHuerta: 1000,
-          cocinaViva: 1500,
-          arteReciclado: 500
-        }
-      };
 
-      function actualizarResumen() {
-        let total = 0;
-        const tipo = tipoEntrada.value;
-        const precioEntrada = precios.entradas[tipo] || 0;
-        resumenEntrada.textContent = tipo ? `$${precioEntrada}` : '–';
-        total += precioEntrada;
+// COMPRAS
 
-        let actividadesSeleccionadas = [];
-        actividades.forEach((act) => {
-          if (act.checked) {
-            const nombre = act.value;
-            const precioAct = precios.actividades[nombre] || 0;
-            actividadesSeleccionadas.push(`$${precioAct}`);
-            total += precioAct;
-          }
-        });
+const parquesPorCiudad = {
+  bsas: 'Buenos Aires - PARQUE CENTENARIO',
+  cordoba: 'Córdoba - PARQUE SARMIENTO',
+  rosario: 'Rosario - Predio ferial de la ciudad'
+};
 
-        resumenActividades.textContent = actividadesSeleccionadas.length
-          ? actividadesSeleccionadas.join(' + ')
-          : '–';
-        resumenTotal.textContent = `$${total}`;
-      }
+// Función auxiliar para abreviar accesos al DOM
+const el = id => document.getElementById(id);
 
-      tipoEntrada.addEventListener("change", actualizarResumen);
-      actividades.forEach(act => act.addEventListener("change", actualizarResumen));
+// Datos de talleres por ciudad
+const talleresPorCiudad = {
+  bsas: [
+    { id: "reciclaje", label: "Taller de reciclaje creativo – $1.000" },
+    { id: "huerta", label: "Taller de huerta urbana – $800" },
+    { id: "compost", label: "Taller de compostaje – $700" }
+  ],
+  cordoba: [
+    { id: "energia", label: "Trivia sustentable con premios ecológicos – $1.200" },
+    { id: "plastica", label: "Cocina saludable en vivo – $900" }
+  ],
+  rosario: [
+    { id: "movilidad", label: "Taller de movilidad sustentable – $1.100" },
+    { id: "reciclaje", label: "Taller de reciclaje creativo – $1.000" }
+  ]
+};
 
-      document.getElementById("formCompra").addEventListener("submit", function (e) {
-        e.preventDefault();
-        const tipo = tipoEntrada.value;
-        const nombreValor = nombre.value.trim();
-        const emailValor = email.value.trim();
+// Mostrar talleres según ciudad
+function mostrarTalleres() {
+  const ciudad = el("ciudad").value;
+  const contenedor = el("contenedorTalleres");
+  contenedor.innerHTML = "";
 
-        if (!tipo) {
-          alert("⚠️ Debés seleccionar un tipo de entrada.");
-          tipoEntrada.focus();
-          return;
-        }
+  if (!ciudad || !talleresPorCiudad[ciudad]) return;
 
-        if (!nombreValor) {
-          alert("⚠️ Ingresá tu nombre y apellido.");
-          nombre.focus();
-          return;
-        }
+  talleresPorCiudad[ciudad].forEach(taller => {
+    const div = document.createElement("div");
+    div.classList.add("form-check");
 
-        if (!emailValor || !emailValor.includes("@") || !emailValor.includes(".")) {
-          alert("⚠️ Ingresá un correo electrónico válido.");
-          email.focus();
-          return;
-        }
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.classList.add("form-check-input");
+    checkbox.id = taller.id;
+    checkbox.value = taller.label;
+    
+    const precioStr = taller.label.match(/\$([\d\.]+)/)?.[1]?.replace(/\./g, "") || "0";
+    checkbox.setAttribute("data-precio", precioStr);
 
-        alert(`🎉 ¡Gracias por tu compra, ${nombreValor}!\n\nTe enviaremos un correo a ${emailValor} con los detalles de tu entrada y actividades.`);
-      });
-    });
+    const label = document.createElement("label");
+    label.classList.add("form-check-label");
+    label.htmlFor = taller.id;
+    label.textContent = taller.label;
 
-// Mostrar campos de tarjeta según selección
+    div.appendChild(checkbox);
+    div.appendChild(label);
+    contenedor.appendChild(div);
+  });
+
+  contenedor.querySelectorAll("input[type=checkbox]").forEach(chk => {
+    chk.addEventListener("change", actualizarResumen);
+  });
+}
+
+// Mostrar bloques al elegir tipo de entrada
+el("tipoEntrada").addEventListener("change", function () {
+  const val = this.value;
+  el("bloqueDatosPago").style.display = val ? "block" : "none";
+  el("bloqueResumen").style.display = val ? "block" : "none";
+  el("bloqueBotonConfirmar").style.display = val ? "block" : "none";
+  actualizarResumen();
+});
+
+// Actualizar resumen
+function actualizarResumen() {
+  const tipoEntrada = el("tipoEntrada");
+  const ciudad = el("ciudad");
+  const contenedorTalleres = el("contenedorTalleres");
+  const resumenEntrada = el("resumenEntrada");
+  const resumenActividades = el("resumenActividades");
+  const resumenTotal = el("resumenTotal");
+
+  const opcionesEntrada = {
+    general: 2000,
+    pase: 5000,
+    familiarDia: 6000,
+    familiarFull: 15000,
+    preferencial: 0
+  };
+
+  const textoEntrada = tipoEntrada.options[tipoEntrada.selectedIndex]?.text || "–";
+  const precioEntrada = opcionesEntrada[tipoEntrada.value] || 0;
+  resumenEntrada.textContent = textoEntrada;
+
+  let actividadesSeleccionadas = [];
+  let totalActividades = 0;
+
+  contenedorTalleres.querySelectorAll("input[type=checkbox]:checked").forEach(chk => {
+    actividadesSeleccionadas.push(chk.value);
+    totalActividades += parseInt(chk.dataset.precio || "0", 10);
+  });
+
+  resumenActividades.textContent = actividadesSeleccionadas.length ? actividadesSeleccionadas.join(", ") : "–";
+  const total = precioEntrada + totalActividades;
+  resumenTotal.textContent = `$${total.toLocaleString('es-AR')}`;
+}
+
+// Mostrar campos de tarjeta si se elige tarjeta
 document.querySelectorAll('input[name="metodoPago"]').forEach(radio => {
-  radio.addEventListener('change', function() {
-    document.getElementById('camposTarjeta').style.display = this.value === 'tarjeta' ? 'block' : 'none';
+  radio.addEventListener("change", () => {
+    const camposTarjeta = el("camposTarjeta");
+    if (radio.value === "tarjeta" && radio.checked) {
+      camposTarjeta.style.display = "block";
+      setCamposTarjetaRequeridos(true, "camposTarjeta");
+    } else if (radio.checked) {
+      camposTarjeta.style.display = "none";
+      setCamposTarjetaRequeridos(false, "camposTarjeta");
+    }
   });
 });
 
-// División de medios de pago
-document.getElementById('btnDividirPago').addEventListener('click', function () {
-  document.getElementById('dividirPagoSection').style.display = 'block';
-  this.style.display = 'none';
-  document.getElementById('btnCancelarDivision').classList.remove('d-none');
+function setCamposTarjetaRequeridos(requerido, contenedorId) {
+  const contenedor = el(contenedorId);
+  contenedor?.querySelectorAll("input").forEach(input => {
+    input.required = requerido;
+  });
+}
+
+// División de pago
+el("btnDividirPago").addEventListener("click", () => {
+  el("dividirPagoSection").style.display = "block";
+  el("btnDividirPago").classList.add("d-none");
+  el("btnCancelarDivision").classList.remove("d-none");
+  el("segundoMedioPago").required = true;
 });
 
-
-// Mostrar campos de tarjeta para segundo medio de pago
-document.getElementById('segundoMedioPago').addEventListener('change', function() {
-  document.getElementById('camposTarjeta2').style.display = this.value === 'tarjeta' ? 'block' : 'none';
+el("btnCancelarDivision").addEventListener("click", () => {
+  el("dividirPagoSection").style.display = "none";
+  el("btnDividirPago").classList.remove("d-none");
+  el("btnCancelarDivision").classList.add("d-none");
+  el("segundoMedioPago").required = false;
+  el("segundoMedioPago").value = "";
+  mostrarCamposTarjetaSegundoPago(false);
+  limpiarCamposTarjeta("camposTarjeta2");
 });
 
-// Botón para cancelar la división de medios de pago
-document.getElementById('btnCancelarDivision').addEventListener('click', function () {
-
-  document.getElementById('dividirPagoSection').style.display = 'none';
-
-  document.getElementById('btnDividirPago').style.display = 'inline-block';
-
-  this.classList.add('d-none');
-
-  document.getElementById('segundoMedioPago').value = '';
-  document.getElementById('montoSegundoMedio').value = '';
-  document.getElementById('camposTarjeta2').style.display = 'none';
+el("segundoMedioPago").addEventListener("change", () => {
+  mostrarCamposTarjetaSegundoPago(el("segundoMedioPago").value === "tarjeta");
 });
 
-// Validación del formulario de contacto
-document.getElementById("form-contacto")?.addEventListener("submit", function(event) {
-  event.preventDefault(); // Previene envío real
+function mostrarCamposTarjetaSegundoPago(mostrar) {
+  const camposTarjeta2 = el("camposTarjeta2");
+  camposTarjeta2.style.display = mostrar ? "block" : "none";
+  setCamposTarjetaRequeridos(mostrar, "camposTarjeta2");
+}
 
-  const nombre = this.nombre.value.trim();
-  const email = this.email.value.trim();
-  const mensaje = this.mensaje.value.trim();
-  const mensajeDiv = document.getElementById("form-mensaje");
+function limpiarCamposTarjeta(contenedorId) {
+  const contenedor = el(contenedorId);
+  contenedor?.querySelectorAll("input").forEach(input => input.value = "");
+}
 
-  if (!nombre || !email || !mensaje) {
-    mensajeDiv.textContent = "Por favor, completá todos los campos.";
-    mensajeDiv.style.color = "red";
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    mensajeDiv.textContent = "Ingresá un correo válido.";
-    mensajeDiv.style.color = "red";
+// Al cambiar ciudad
+el("ciudad").addEventListener("change", () => {
+  mostrarTalleres();
+  actualizarResumen();
+});
+
+// Validación y envío
+
+el("formCompra").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const tipoEntrada = el("tipoEntrada").value;
+  const nombre = el("nombre").value;
+  const email = el("email").value;
+  const ciudad = el("ciudad").value;
+  const metodoPago = document.querySelector('input[name="metodoPago"]:checked');
+  const camposTarjeta = el("camposTarjeta").querySelectorAll("input");
+  const resumenTotal = el("resumenTotal").textContent;
+
+  const errores = [];
+
+  if (!tipoEntrada) errores.push("Seleccioná un tipo de entrada.");
+  if (!nombre) errores.push("Ingresá tu nombre.");
+  if (!email) {
+    errores.push("Ingresá tu email.");
   } else {
-    mensajeDiv.textContent = "Mensaje enviado correctamente ✔";
-    mensajeDiv.style.color = "green";
-    this.reset();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) errores.push("Ingresá un email válido.");
+  }
+  if (!ciudad) errores.push("Seleccioná una ciudad.");
+  if (!metodoPago) errores.push("Seleccioná un método de pago.");
+
+  if (metodoPago?.value === "tarjeta") {
+    camposTarjeta.forEach(campo => {
+      if (!campo.value) errores.push(`Completá el campo: ${campo.placeholder || campo.name}`);
+    });
+  }
+
+  if (errores.length > 0) {
+    mostrarAlerta(errores[0]);
+  } else {
+    mostrarMensajeFinal(nombre, tipoEntrada, ciudad, resumenTotal);
   }
 });
+
+// Alerta de error
+function mostrarAlerta(mensaje) {
+  el("mensajeAlerta").textContent = mensaje;
+  el("alertaCustom").style.display = "block";
+}
+
+function cerrarAlerta() {
+  el("alertaCustom").style.display = "none";
+}
+
+
+// Mensaje final
+function mostrarMensajeFinal(nombre, tipoEntrada, ciudad, total) {
+  el("formCompra").style.display = "none";
+  el("mensajeFinal").style.display = "block";
+
+  const tipoEntradaTexto = document.querySelector(`#tipoEntrada option[value="${tipoEntrada}"]`).textContent;
+
+  const parqueTexto = parquesPorCiudad[ciudad] || ciudad;
+
+  el("tituloFinal").textContent = `¡Gracias por tu compra, ${nombre}!`;
+  el("detalleFinal").innerHTML = `
+    Compraste <strong>${tipoEntradaTexto}</strong> para <strong>${parqueTexto}</strong>.<br>
+    Total abonado: <strong>${total}</strong>.<br><br>
+    Te enviamos un correo a <strong>${el("email").value}</strong> con los detalles de tu entrada.
+  `;
+}
