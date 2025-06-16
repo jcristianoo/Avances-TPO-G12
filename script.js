@@ -14,17 +14,139 @@ const MapManager = {
           title: 'Ropa Ecológica - Buenos Aires',
           content: 'Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables'
         },
+        {
+          id: 'modalBsAsArtesanías',
+          coords: '250,171,43',
+          title: 'Artesanías sustentables - Buenos Aires',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalBsAsHuerta',
+          coords: '353,158,42',
+          title: 'Huerta urbana y jardinería ecológica - Buenos Aires',
+          content: 'Plantas nativas, composteras, macetas biodegradables, kits para armar huertas en casa'
+        },
+        {
+          id: 'modalBsAsEducacion',
+          coords: '463,135,43',
+          title: 'Educación ambiental - Buenos Aires',
+          content: 'Material educativo, libros sobre ecología, juegos didácticos para niños y talleres informativos'
+        },
+        {
+          id: 'modalBsAsReciclaje',
+          coords: '740,358,40',
+          title: 'Stand de reciclaje - Buenos Aires',
+          content: 'Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene ecológica.'
+        },
+        {
+          id: 'modalBsAsOrganicos',
+          coords: '648,464,40',
+          title: 'Productos orgánicos y naturales - Buenos Aires',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalBsTecnologia',
+          coords: '543,515,42',
+          title: 'Tecnología sustentable - Buenos Aires',
+          content: 'Paneles solares, cargadores solares, lámparas LED ecológicas, gadgets de bajo consumo'
+        },
+        {
+          id: 'modalBsAsMovilidad',
+          coords: '416,561,42',
+          title: 'Movilidad sostenible - Buenos Aires',
+          content: 'Bicicletas recicladas, monopatines eléctricos, stands de educación vial ecológica'
+        },
+        {
+          id: 'modalBsAsTaller',
+          coords: '592,72,36',
+          title: 'Taller de reciclaje creativo - Evento exclusivo de Buenos Aires',
+          content: 'Todos los días a las 15:00hs. Una actividad práctica donde vas a poder aprender a transformar residuos en objetos útiles o decorativos. Ideal para todas las edades. Se utilizan materiales reciclados y herramientas seguras'
+        },
+        {
+          id: 'modalBsAsShow',
+          coords: '654,171,38',
+          title: 'Show musical sustentable - Evento exclusivo de Buenos Aires',
+          content: 'Todos los días a las 18:30hs. Un espectáculo al aire libre con bandas que promueven mensajes ecológicos. El sonido se alimenta con energía renovable. Se recomienda traer tu propio vaso o botella reutilizable'
+        },
+        {
+          id: 'modalBsAsYoga',
+          coords: '716,253,37',
+          title: 'Clase de yoga ecológica - Evento exclusivo de Buenos Aires',
+          content: 'Todos los días a las 17:00hs. Una sesión de yoga para reconectar con el cuerpo y la naturaleza, en un entorno verde, guiada por profesionales. Se utilizan elementos reciclables y biodegradables'
+        },
       ]
     },
     cordoba: {
       id: 'mapaCordoba',
       areas: [
         {
-          id: 'modalCordobaTecno',
-          coords: '777,335,45',
-          title: 'Tecnología Sustentable - Córdoba',
-          content: 'Paneles solares, cargadores solares, lámparas LED ecológicas y gadgets de bajo consumo'
+          id: 'modalCordobaRopa',
+          coords: '609,535,41',
+          title: 'Ropa Ecológica - Cordoba',
+          content: 'Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables'
         },
+        {
+          id: 'modalCordobaArtesanías',
+          coords: '152,365,41',
+          title: 'Artesanías sustentables - Cordoba',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalCordobaHuerta',
+          coords: '186,252,41',
+          title: 'Huerta urbana y jardinería ecológica - Cordoba',
+          content: 'Plantas nativas, composteras, macetas biodegradables, kits para armar huertas en casa'
+        },
+        {
+          id: 'modalCordobaEducacion',
+          coords: '224,142,41',
+          title: 'Educación ambiental - Cordoba',
+          content: 'Material educativo, libros sobre ecología, juegos didácticos para niños y talleres informativos'
+        },
+        {
+          id: 'modalCordobaReciclaje',
+          coords: '640,156,41',
+          title: 'Stand de reciclaje - Cordoba',
+          content: 'Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene ecológica.'
+        },
+        {
+          id: 'modalCordobaOrganicos',
+          coords: '737,216,41',
+          title: 'Productos orgánicos y naturales - Cordoba',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalCordobaTecnologia',
+          coords: '777,334,41',
+          title: 'Tecnología sustentable - Cordoba',
+          content: 'Paneles solares, cargadores solares, lámparas LED ecológicas, gadgets de bajo consumo'
+        },
+        {
+          id: 'modalCordobaMovilidad',
+          coords: '753,483,41',
+          title: 'Movilidad sostenible - Cordoba',
+          content: 'Bicicletas recicladas, monopatines eléctricos, stands de educación vial ecológica'
+        },
+        {
+          id: 'modalCordobaGym',
+          coords: '321,74,41',
+          title: 'Eco-gym al aire libre - Evento exclusivo de Cordoba',
+          content: 'Todos los días a las 15:00hs.Clase abierta de ejercicios funcionales y estiramiento guiado por instructores, utilizando elementos reciclados como pesas y colchonetas ecológica'
+        },
+        {
+          id: 'modalCordobaCocina',
+          coords: '438,88,41',
+          title: 'Cocina saludable en vivo - Evento exclusivo de Cordoba',
+          content: 'Todos los días a las 17:00hs. Demostración de recetas con productos orgánicos y de estación. Tips para una alimentación consciente y sin desperdicio. Degustación al final de la actividad'
+        },
+        {
+          id: 'modalCordobaTrivia',
+          coords: '535,122,41',
+          title: 'Trivia sustentable con premios ecológicos - Evento exclusivo de Cordoba',
+          content: 'Todos los días a las 18:30 hs. Una competencia en equipo donde los visitantes responden preguntas sobre medio ambiente, reciclaje y sustentabilidad. Los ganadores se llevan productos ecológicos como bolsas reutilizables, botellas de acero y cuadernos reciclados. Ideal para aprender jugando'
+        },
+        
+        
       ]
     },
     rosario: {
@@ -35,6 +157,72 @@ const MapManager = {
           coords: '232,68,45',
           title: 'Huerta Urbana - Rosario',
           content: 'Plantas nativas, composteras, macetas biodegradables y kits para armar huertas en casa'
+        },
+        {
+          id: 'modalRosarioRopa',
+          coords: '167,475,43',
+          title: 'Ropa Ecológica - Rosario',
+          content: 'Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables'
+        },
+        {
+          id: 'modalRosarioArtesanías',
+          coords: '67,366,43',
+          title: 'Artesanías sustentables - Rosario',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalRosarioHuerta',
+          coords: '67,244,43',
+          title: 'Huerta urbana y jardinería ecológica - Rosario',
+          content: 'Plantas nativas, composteras, macetas biodegradables, kits para armar huertas en casa'
+        },
+        {
+          id: 'modalRosarioEducacion',
+          coords: '96,105,43',
+          title: 'Educación ambiental - Rosario',
+          content: 'Material educativo, libros sobre ecología, juegos didácticos para niños y talleres informativos'
+        },
+        {
+          id: 'modalRosarioReciclaje',
+          coords: '590,72,43',
+          title: 'Stand de reciclaje - Rosario',
+          content: 'Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene ecológica.'
+        },
+        {
+          id: 'modalRosarioOrganicos',
+          coords: '720,111,43',
+          title: 'Productos orgánicos y naturales - Rosario',
+          content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
+        },
+        {
+          id: 'modalRosarioTecnologia',
+          coords: '742,237,43',
+          title: 'Tecnología sustentable - Rosario',
+          content: 'Paneles solares, cargadores solares, lámparas LED ecológicas, gadgets de bajo consumo'
+        },
+        {
+          id: 'modalRosarioMovilidad',
+          coords: '688,390,43',
+          title: 'Movilidad sostenible - Rosario',
+          content: 'Bicicletas recicladas, monopatines eléctricos, stands de educación vial ecológica'
+        },
+        {
+          id: 'modalRosarioTaller',
+          coords: '321,74,41',
+          title: 'Taller de huerta urbana - Evento exclusivo de Rosario',
+          content: 'Todos los días a las 15:00hs. Espacio interactivo para aprender a armar una huerta casera, incluso en espacios reducidos. Incluye semillas agroecológicas y materiales reutilizables.'
+        },
+        {
+          id: 'modalRosarioCocina',
+          coords: '438,88,41',
+          title: 'Cine ambiental al aire libre - Evento exclusivo de Rosario',
+          content: 'Todos los días a las 20:00hs. Proyección de cortos y documentales sobre problemáticas ambientales. Se realiza al aire libre con mantas y luces solares. Traé tu vianda o bebida reutilizable'
+        },
+        {
+          id: 'modalRosarioArte',
+          coords: '535,122,41',
+          title: 'Concurso de arte reciclado - Evento exclusivo de Rosario',
+          content: 'Todos los días a las 16:00hs. Actividad abierta donde se exhiben obras hechas con materiales reciclados. Espacio creativo para chicos y grandes. Premios sustentables para las mejores propuestas'
         },
       ]
     }
@@ -368,26 +556,4 @@ document.getElementById('btnCancelarDivision').addEventListener('click', functio
   document.getElementById('segundoMedioPago').value = '';
   document.getElementById('montoSegundoMedio').value = '';
   document.getElementById('camposTarjeta2').style.display = 'none';
-});
-
-// Validación del formulario de contacto
-document.getElementById("form-contacto").addEventListener("submit", function(event) {
-  event.preventDefault(); // Previene envío real
-
-  const nombre = this.nombre.value.trim();
-  const email = this.email.value.trim();
-  const mensaje = this.mensaje.value.trim();
-  const mensajeDiv = document.getElementById("form-mensaje");
-
-  if (!nombre || !email || !mensaje) {
-    mensajeDiv.textContent = "Por favor, completá todos los campos.";
-    mensajeDiv.style.color = "red";
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    mensajeDiv.textContent = "Ingresá un correo válido.";
-    mensajeDiv.style.color = "red";
-  } else {
-    mensajeDiv.textContent = "Mensaje enviado correctamente ✔";
-    mensajeDiv.style.color = "green";
-    this.reset();
-  }
 });
