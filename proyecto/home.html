@@ -180,6 +180,53 @@
       </div>
     </section>
   </main>
+  
+  <!-- Chat Flotante -->
+  <div id="chatWidget" class="chat-widget">
+    <!-- Burbuja del Chat -->
+    <div id="chatBubble" class="chat-bubble">
+      <i class="bi bi-chat-dots-fill"></i>
+      <span class="chat-notification">1</span>
+    </div>
+
+    <!-- Ventana del Chat -->
+    <div id="chatWindow" class="chat-window">
+      <div class="chat-header">
+        <div class="chat-header-info">
+          <div class="chat-avatar">
+            <i class="bi bi-person-circle"></i>
+          </div>
+          <div class="chat-title">
+            <h6>Asistente EcoLife</h6>
+            <span class="chat-status">En línea</span>
+          </div>
+        </div>
+        <button id="chatClose" class="chat-close">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+      
+      <div class="chat-messages" id="chatMessages">
+        <div class="message bot-message">
+          <div class="message-avatar">
+            <i class="bi bi-leaf"></i>
+          </div>
+          <div class="message-content">
+            <p>¡Hola! 🌿 Soy el asistente virtual de EcoLife. ¿En qué puedo ayudarte hoy?</p>
+            <span class="message-time">Ahora</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="chat-input-container">
+        <input type="text" id="chatInput" class="chat-input" placeholder="Escribí tu mensaje...">
+        <button id="chatSend" class="chat-send">
+          <i class="bi bi-send-fill"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <footer>
     <h5>Contacto</h5>
     <p>contacto@ecolife.com.ar</p>
@@ -195,6 +242,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="../script.js"> </script>
+  <script src="../js/script.js"></script>
+  <script src="../js/chat.js"></script>
 </body>
 </html>
