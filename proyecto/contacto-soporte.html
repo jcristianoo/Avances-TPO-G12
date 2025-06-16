@@ -44,29 +44,35 @@
 
   <main>
     <h2>CONTACTO</h2>
+    <section class="hero contacto-hero animada">
+      <h3>¡Hablemos!</h3>
+      <p>¿Tenés dudas, sugerencias o comentarios? Completá el formulario y te responderemos pronto.</p>
+    </section>
     <div class="contenedor">
-      <form class="form-soporte">
+      <form class="form-soporte animada" id="formulario-contacto" style="background-color: var(--verde-claro);">
         <div class="form-group">
-          <label for="nombre">Nombre</label>
+          <label for="nombre"><b>Nombre</b></label>
           <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
         </div>
         <div class="form-group">
-          <label for="email">Email</label>
+          <label for="email"><b>Email</b></label>
           <input type="email" id="email" name="email" class="form-control" placeholder="tu@email.com" required>
         </div>
         <div class="form-group">
-          <label for="asunto">Asunto</label>
+          <label for="asunto"><b>Asunto</b></label>
           <input type="text" id="asunto" name="asunto" class="form-control" placeholder="Motivo de tu consulta"
             required>
         </div>
         <div class="form-group">
-          <label for="mensaje">Mensaje</label>
+          <label for="mensaje"><b>Mensaje</b></label>
           <textarea id="mensaje" name="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje aquí..."
             required></textarea>
         </div>
         <button type="submit" class="btn">Enviar</button>
       </form>
-    </div>
+      <div id="mensaje-gracias" class="alert alert-success mt-3" style="display: none;">
+        ¡Gracias por contactarnos! Te responderemos a la brevedad.
+      </div>
   </main>
 
 
