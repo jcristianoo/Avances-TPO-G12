@@ -1324,40 +1324,6 @@ main {
   border-radius: 0 0 var(--borde-radius) var(--borde-radius);
 }
 
-/*Pagina de Contacto*/
-.contacto-hero {
-  background: linear-gradient(120deg, #A8E6CF 0%, #DCEDC1 100%);
-  color: #2E7D32;
-  padding: 2rem 2rem 1rem 2rem;
-  text-align: center;
-  border-radius: 18px;
-  margin: 2rem auto;
-  max-width: 800px;
-  box-shadow: 0 4px 24px rgba(46, 125, 50, 0.12);
-}
-
-.contacto-hero h1 {
-  font-size: 2.2rem;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-}
-
-.contacto-hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: 0 auto;
-  color: #33691E;
-}
-
-.alert-success {
-  border: 2px solid #A5D6A7;
-  background-color: #E8F5E9;
-  color: #388E3C;
-  font-weight: 600;
-  font-size: 1.05rem;
-  transition: opacity 0.5s ease;
-}
-
 /*Animaciones de carga*/
 .oculta {
   opacity: 0;
