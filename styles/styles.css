@@ -428,24 +428,29 @@ li {
 
 /* MAPAS */
 .map {
-  margin: 2.5rem 0;
+  margin: 1rem 0;
   border-radius: var(--borde-radius);
   overflow: hidden;
   box-shadow: var(--sombra);
   background: var(--blanco);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .map img {
   width: 100%;
-  max-width: 900px;
+  height: auto;            
   border: none;
   border-radius: var(--borde-radius);
-  transition: var(--transicion);
+  transition: var(--transicion), transform 0.3s ease;
   box-shadow: none;
+  display: block;
 }
 
-.map:hover img {
-  filter: brightness(0.97) saturate(1.1);
+.map:focus-within {
+  outline: 3px solid #007BFF;
+  outline-offset: 4px;
 }
 
 /* FOOTER */
