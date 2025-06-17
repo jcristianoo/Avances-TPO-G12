@@ -34,43 +34,43 @@ const MapManager = {
         },
         {
           id: 'modalBsAsReciclaje',
-          coords: '740,358,40',
+          coords: '673,329,40',
           title: 'Stand de reciclaje - Buenos Aires',
           content: 'Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene ecológica.'
         },
         {
           id: 'modalBsAsOrganicos',
-          coords: '648,464,40',
+          coords: '537,65,40',
           title: 'Productos orgánicos y naturales - Buenos Aires',
           content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
         },
         {
           id: 'modalBsTecnologia',
-          coords: '543,515,42',
+          coords: '493,471,42',
           title: 'Tecnología sustentable - Buenos Aires',
           content: 'Paneles solares, cargadores solares, lámparas LED ecológicas, gadgets de bajo consumo'
         },
         {
           id: 'modalBsAsMovilidad',
-          coords: '416,561,42',
+          coords: '376,509,42',
           title: 'Movilidad sostenible - Buenos Aires',
           content: 'Bicicletas recicladas, monopatines eléctricos, stands de educación vial ecológica'
         },
         {
           id: 'modalBsAsTaller',
-          coords: '592,72,36',
+          coords: '589,419,36',
           title: 'Taller de reciclaje creativo - Evento exclusivo de Buenos Aires',
           content: 'Todos los días a las 15:00hs. Una actividad práctica donde vas a poder aprender a transformar residuos en objetos útiles o decorativos. Ideal para todas las edades. Se utilizan materiales reciclados y herramientas seguras'
         },
         {
           id: 'modalBsAsShow',
-          coords: '654,171,38',
+          coords: '596,155,38',
           title: 'Show musical sustentable - Evento exclusivo de Buenos Aires',
           content: 'Todos los días a las 18:30hs. Un espectáculo al aire libre con bandas que promueven mensajes ecológicos. El sonido se alimenta con energía renovable. Se recomienda traer tu propio vaso o botella reutilizable'
         },
         {
           id: 'modalBsAsYoga',
-          coords: '716,253,37',
+          coords: '651,232,37',
           title: 'Clase de yoga ecológica - Evento exclusivo de Buenos Aires',
           content: 'Todos los días a las 17:00hs. Una sesión de yoga para reconectar con el cuerpo y la naturaleza, en un entorno verde, guiada por profesionales. Se utilizan elementos reciclables y biodegradables'
         },
