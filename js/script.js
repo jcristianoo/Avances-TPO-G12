@@ -446,7 +446,49 @@ document.querySelectorAll('a[href^="#"]').forEach(ancla => {
   });
 });
 
+// FORMULARIO DE CONTACTO
+document.addEventListener("DOMContentLoaded", function () {
+  const formulario = document.querySelector("#formulario-contacto");
 
+  formulario.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const asunto = document.getElementById("asunto").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+
+    const campos = [nombre, email, asunto, mensaje];
+
+    // Validar que todos los campos estén completos
+    for (let campo of campos) {
+      if (!campo) {
+        alert("Por favor, completá todos los campos.");
+        return;
+      }
+    }
+
+    // Validar formato del email
+    const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailValido.test(email)) {
+      alert("El email ingresado no es válido.");
+      return;
+    }
+
+    // Mostrar mensaje de agradecimiento
+    document.getElementById("mensaje-gracias").style.display = "block";
+    alert("¡Gracias por contactarte, " + nombre + "! Te responderemos a la brevedad.");
+
+    // Reiniciar el formulario
+    formulario.reset();
+
+    // Consola para ver datos (opcional)
+    console.log("Nombre:", nombre);
+    console.log("Email:", email);
+    console.log("Asunto:", asunto);
+    console.log("Mensaje:", mensaje);
+  });
+});
 
 // COMPRAS
 
@@ -681,3 +723,4 @@ function mostrarMensajeFinal(nombre, tipoEntrada, ciudad, total) {
     Te enviamos un correo a <strong>${el("email").value}</strong> con los detalles de tu entrada.
   `;
 }
+

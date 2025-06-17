@@ -877,9 +877,15 @@ main {
 }
 
 .caja-avances h3 {
-  text-align: left;
+  text-align: left; 
   margin-top: 2.5rem;
   margin-bottom: 1.2rem;
+}
+
+
+.caja-avances a{
+  text-decoration: none;
+  color:#2E7D32;
 }
 
 /*Pagina de Home*/
