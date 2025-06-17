@@ -81,72 +81,70 @@ const MapManager = {
       areas: [
         {
           id: 'modalCordobaRopa',
-          coords: '609,535,41',
+          coords: '554,487,41',
           title: 'Ropa Ecológica - Cordoba',
           content: 'Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables'
         },
         {
           id: 'modalCordobaArtesanías',
-          coords: '152,365,41',
+          coords: '136,332,41',
           title: 'Artesanías sustentables - Cordoba',
           content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
         },
         {
           id: 'modalCordobaHuerta',
-          coords: '186,252,41',
+          coords: '171,229,41',
           title: 'Huerta urbana y jardinería ecológica - Cordoba',
           content: 'Plantas nativas, composteras, macetas biodegradables, kits para armar huertas en casa'
         },
         {
           id: 'modalCordobaEducacion',
-          coords: '224,142,41',
+          coords: '204,125,41',
           title: 'Educación ambiental - Cordoba',
           content: 'Material educativo, libros sobre ecología, juegos didácticos para niños y talleres informativos'
         },
         {
           id: 'modalCordobaReciclaje',
-          coords: '640,156,41',
+          coords: '579,140,41',
           title: 'Stand de reciclaje - Cordoba',
           content: 'Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene ecológica.'
         },
         {
           id: 'modalCordobaOrganicos',
-          coords: '737,216,41',
+          coords: '669,199,41',
           title: 'Productos orgánicos y naturales - Cordoba',
           content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
         },
         {
           id: 'modalCordobaTecnologia',
-          coords: '777,334,41',
+          coords: '706,302,41',
           title: 'Tecnología sustentable - Cordoba',
           content: 'Paneles solares, cargadores solares, lámparas LED ecológicas, gadgets de bajo consumo'
         },
         {
           id: 'modalCordobaMovilidad',
-          coords: '753,483,41',
+          coords: '683,437,41',
           title: 'Movilidad sostenible - Cordoba',
           content: 'Bicicletas recicladas, monopatines eléctricos, stands de educación vial ecológica'
         },
         {
           id: 'modalCordobaGym',
-          coords: '321,74,41',
+          coords: '290,66,41',
           title: 'Eco-gym al aire libre - Evento exclusivo de Cordoba',
           content: 'Todos los días a las 15:00hs.Clase abierta de ejercicios funcionales y estiramiento guiado por instructores, utilizando elementos reciclados como pesas y colchonetas ecológica'
         },
         {
           id: 'modalCordobaCocina',
-          coords: '438,88,41',
+          coords: '397,80,41',
           title: 'Cocina saludable en vivo - Evento exclusivo de Cordoba',
           content: 'Todos los días a las 17:00hs. Demostración de recetas con productos orgánicos y de estación. Tips para una alimentación consciente y sin desperdicio. Degustación al final de la actividad'
         },
         {
           id: 'modalCordobaTrivia',
-          coords: '535,122,41',
+          coords: '484,111,41',
           title: 'Trivia sustentable con premios ecológicos - Evento exclusivo de Cordoba',
           content: 'Todos los días a las 18:30 hs. Una competencia en equipo donde los visitantes responden preguntas sobre medio ambiente, reciclaje y sustentabilidad. Los ganadores se llevan productos ecológicos como bolsas reutilizables, botellas de acero y cuadernos reciclados. Ideal para aprender jugando'
         },
-        
-        
       ]
     },
     rosario: {
@@ -351,7 +349,7 @@ const MapManager = {
           const rect = img.getBoundingClientRect();
           const x = Math.round(e.clientX - rect.left);
           const y = Math.round(e.clientY - rect.top);
-          console.log(`Click en imagen de ${city}: x=${x}, y=${y}`);
+          console.log(`Click en imagen de ${city} (x,y): (${x},${y})`);
         });
       }
 
