@@ -152,73 +152,73 @@ const MapManager = {
       areas: [
         {
           id: 'modalRosarioHuerta',
-          coords: '232,68,45',
+          coords: '806,0,45',
           title: 'Huerta Urbana - Rosario',
           content: 'Plantas nativas, composteras, macetas biodegradables y kits para armar huertas en casa'
         },
         {
           id: 'modalRosarioRopa',
-          coords: '167,475,43',
+          coords: '153,438,43',
           title: 'Ropa Ecológica - Rosario',
           content: 'Prendas de algodón orgánico, textiles reciclados, calzado vegano y accesorios reutilizables'
         },
         {
           id: 'modalRosarioArtesanías',
-          coords: '67,366,43',
+          coords: '61,333,43',
           title: 'Artesanías sustentables - Rosario',
           content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
         },
         {
           id: 'modalRosarioHuerta',
-          coords: '67,244,43',
+          coords: '56,221,43',
           title: 'Huerta urbana y jardinería ecológica - Rosario',
           content: 'Plantas nativas, composteras, macetas biodegradables, kits para armar huertas en casa'
         },
         {
           id: 'modalRosarioEducacion',
-          coords: '96,105,43',
+          coords: '87,97,43',
           title: 'Educación ambiental - Rosario',
           content: 'Material educativo, libros sobre ecología, juegos didácticos para niños y talleres informativos'
         },
         {
           id: 'modalRosarioReciclaje',
-          coords: '590,72,43',
+          coords: '535,60,43',
           title: 'Stand de reciclaje - Rosario',
           content: 'Alimentos sin agrotóxicos, frutas y verduras de estación, cosmética natural y productos de higiene ecológica.'
         },
         {
           id: 'modalRosarioOrganicos',
-          coords: '720,111,43',
+          coords: '658,97,43',
           title: 'Productos orgánicos y naturales - Rosario',
           content: 'Objetos hechos a mano con materiales reciclados, madera recuperada, cerámica ecológica y papel artesanal'
         },
         {
           id: 'modalRosarioTecnologia',
-          coords: '742,237,43',
+          coords: '676,214,43',
           title: 'Tecnología sustentable - Rosario',
           content: 'Paneles solares, cargadores solares, lámparas LED ecológicas, gadgets de bajo consumo'
         },
         {
           id: 'modalRosarioMovilidad',
-          coords: '688,390,43',
+          coords: '623,358,43',
           title: 'Movilidad sostenible - Rosario',
           content: 'Bicicletas recicladas, monopatines eléctricos, stands de educación vial ecológica'
         },
         {
           id: 'modalRosarioTaller',
-          coords: '321,74,41',
+          coords: '212,61,41',
           title: 'Taller de huerta urbana - Evento exclusivo de Rosario',
           content: 'Todos los días a las 15:00hs. Espacio interactivo para aprender a armar una huerta casera, incluso en espacios reducidos. Incluye semillas agroecológicas y materiales reutilizables.'
         },
         {
           id: 'modalRosarioCocina',
-          coords: '438,88,41',
+          coords: '433,61,41',
           title: 'Cine ambiental al aire libre - Evento exclusivo de Rosario',
           content: 'Todos los días a las 20:00hs. Proyección de cortos y documentales sobre problemáticas ambientales. Se realiza al aire libre con mantas y luces solares. Traé tu vianda o bebida reutilizable'
         },
         {
           id: 'modalRosarioArte',
-          coords: '535,122,41',
+          coords: '322,60,41',
           title: 'Concurso de arte reciclado - Evento exclusivo de Rosario',
           content: 'Todos los días a las 16:00hs. Actividad abierta donde se exhiben obras hechas con materiales reciclados. Espacio creativo para chicos y grandes. Premios sustentables para las mejores propuestas'
         },
